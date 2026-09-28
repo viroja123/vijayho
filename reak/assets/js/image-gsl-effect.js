@@ -6,9 +6,10 @@ class WebGLHoverManager {
 
         container.querySelector('.image-gsl-canvas').appendChild(this.canvas);
 
-        this.gl = this.canvas.getContext('webgl');
+        this.gl = this.canvas.getContext('webgl') || this.canvas.getContext('experimental-webgl');
         if (!this.gl) {
             console.error('WebGL not supported');
+            if (this.canvas.parentElement) this.canvas.parentElement.removeChild(this.canvas);
             return;
         }
 
@@ -326,19 +327,26 @@ function initializeWebGLEffect(container, webGLHoverManager) {
     const imgElements = container.querySelectorAll('.image-gsl img');
 
     imgElements.forEach(img => {
-        if (img.getAttribute('crossorigin') !== 'anonymous') {
-            img.setAttribute('crossorigin', 'anonymous');
-            const src = img.getAttribute('src');
-            img.setAttribute('src', '');
-            img.setAttribute('src', src);
+        // Only set crossorigin for non-file protocols if crossorigin is not set
+        if (location.protocol !== 'file:' && img.src && img.src.startsWith('http') && img.getAttribute('crossorigin') !== 'anonymous') {
+            try {
+                img.setAttribute('crossorigin', 'anonymous');
+                const src = img.getAttribute('src');
+                img.setAttribute('src', '');
+                img.setAttribute('src', src);
+            } catch(e) {}
         }
 
         if (!img.complete || !img.naturalWidth) {
             img.onload = () => {
-                webGLHoverManager.addImage(img);
+                if (webGLHoverManager) webGLHoverManager.addImage(img);
+            };
+            img.onerror = () => {
+                img.style.display = 'block';
+                img.style.opacity = '1';
             };
         } else {
-            webGLHoverManager.addImage(img);
+            if (webGLHoverManager) webGLHoverManager.addImage(img);
         }
     });
 }

@@ -168,7 +168,7 @@
 
 		/* ========== rotate ANIMATION ========== */
 		document.querySelectorAll('.rotate-on-scroll').forEach(el => {
-		const section = el.closest('.rotate-section');
+			const section = el.closest('.rotate-section') || el.closest('[class*="-area"]') || el.closest('section') || el.parentElement;
 			if (!section) return;
 			ScrollTrigger.create({
 				trigger: section,
