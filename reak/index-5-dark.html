@@ -2118,6 +2118,340 @@
              </script>
              <!-- our ecosystem area end -->
 
+            <!-- testimonial area start -->
+            <div class="dg-testimonial-area rotate-section p-relative pt-50 pb-50 z-index-1">
+               <div class="dg-testimonial-shape d-none d-lg-block">
+                  <img class="rotate-on-scroll" src="assets/img/shape/testimonial-2.png" alt="">
+               </div>
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-2">
+                        <div class="oit-section-subtitle-box text-center text-lg-start">
+                           <span class="oit-section-subtitle">Testimonial</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="offset-xl-1 col-xl-10">
+                        <div class="oit-section-title-box pl-70 mb-70 text-center text-lg-start">
+                           <h3 class="oit-section-title oit-title-revel">Reflections from <br><span class="pl-265">our
+                                 clients</span></h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Compact Marquee Cards Swiper with Left & Right Dark Shadow -->
+               <style>
+                  .wcs-testimonial-outer {
+                     position: relative;
+                     width: 100%;
+                     overflow: hidden;
+                     padding: 10px 0 20px;
+                  }
+                  .wcs-edge-shadow-left {
+                     position: absolute;
+                     top: 0;
+                     left: 0;
+                     bottom: 0;
+                     width: 160px;
+                     background: linear-gradient(to right, #0D0D0D 20%, rgba(13, 13, 13, 0) 100%);
+                     z-index: 10;
+                     pointer-events: none;
+                  }
+                  .wcs-edge-shadow-right {
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     bottom: 0;
+                     width: 160px;
+                     background: linear-gradient(to left, #0D0D0D 20%, rgba(13, 13, 13, 0) 100%);
+                     z-index: 10;
+                     pointer-events: none;
+                  }
+                  .wcs-swiper-container .swiper-wrapper {
+                     transition-timing-function: linear !important;
+                  }
+                  .wcs-card {
+                     background: #131415;
+                     border: 1px solid rgba(255, 255, 255, 0.08);
+                     border-radius: 18px;
+                     padding: 26px 24px;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: space-between;
+                     min-height: 290px;
+                     height: 100%;
+                     transition: all 0.3s ease;
+                     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                  }
+                  .wcs-card:hover {
+                     border-color: rgba(255, 241, 230, 0.556);
+                     transform: translateY(-4px);
+                     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+                  }
+                  .wcs-card-header {
+                     display: flex;
+                     justify-content: space-between;
+                     align-items: center;
+                     margin-bottom: 16px;
+                  }
+                  .wcs-stars {
+                     color: #FF9500;
+                     font-size: 14px;
+                     letter-spacing: 2px;
+                  }
+                  .wcs-quote-icon svg {
+                     width: 26px;
+                     height: 20px;
+                     fill: rgba(255, 255, 255, 0.08);
+                  }
+                  .wcs-quote-text {
+                     font-size: 14.5px;
+                     line-height: 1.6;
+                     color: #D2D2D2;
+                     font-style: italic;
+                     margin-bottom: 22px;
+                     flex-grow: 1;
+                  }
+                  .wcs-author-box {
+                     display: flex;
+                     align-items: center;
+                     gap: 14px;
+                     margin-bottom: 18px;
+                  }
+                  .wcs-avatar {
+                     width: 44px;
+                     height: 44px;
+                     border-radius: 50%;
+                     background: linear-gradient(135deg, #FF6B00 0%, #FF2E00 100%);
+                     color: #FFFFFF;
+                     font-weight: 700;
+                     font-size: 16px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     flex-shrink: 0;
+                     box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3);
+                  }
+                  .wcs-author-info {
+                     display: flex;
+                     flex-direction: column;
+                  }
+                  .wcs-author-name {
+                     font-size: 15px;
+                     font-weight: 700;
+                     color: #FFFFFF;
+                     margin: 0 0 2px 0;
+                  }
+                  .wcs-author-location {
+                     font-size: 12px;
+                     color: #888888;
+                     margin: 0;
+                  }
+                  .wcs-pill {
+                     display: inline-flex;
+                     align-items: center;
+                     gap: 8px;
+                     padding: 6px 14px;
+                     border-radius: 50px;
+                     background: rgba(255, 110, 0, 0.08);
+                     border: 1px solid rgba(255, 110, 0, 0.25);
+                     color: #FF8533;
+                     font-size: 12px;
+                     font-weight: 600;
+                     align-self: flex-start;
+                  }
+               </style>
+
+               <div class="wcs-testimonial-outer">
+                  <div class="wcs-edge-shadow-left"></div>
+                  <div class="wcs-edge-shadow-right"></div>
+
+                  <div class="swiper-container wcs-swiper-container" id="wcsSwiper">
+                     <div class="swiper-wrapper">
+                        <!-- Card 1 -->
+                        <div class="swiper-slide">
+                           <div class="wcs-card">
+                              <div>
+                                 <div class="wcs-card-header">
+                                    <div class="wcs-stars">★★★★★</div>
+                                    <div class="wcs-quote-icon">
+                                       <svg viewBox="0 0 53 38"><path d="M52.9994 15.1432H41.6423L49.2138 0.000377655H37.8566L30.2852 15.1432V37.8574H52.9994V15.1432Z"/><path d="M22.7143 37.8574V15.1432H11.3571L18.9286 0.000377655H7.57148L-1.90735e-06 15.1432V37.8574H22.7143Z"/></svg>
+                                    </div>
+                                 </div>
+                                 <p class="wcs-quote-text">"Professional team, great communication, and excellent marketing strategy. They helped us scale our online presence effectively."</p>
+                              </div>
+                              <div>
+                                 <div class="wcs-author-box">
+                                    <div class="wcs-avatar">M</div>
+                                    <div class="wcs-author-info">
+                                       <h4 class="wcs-author-name">Monica Dodwani</h4>
+                                       <span class="wcs-author-location">Chicago, USA</span>
+                                    </div>
+                                 </div>
+                                 <div class="wcs-pill"><span class="wcs-pill-icon">🔍</span> Scalable Online Business Growth</div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="swiper-slide">
+                           <div class="wcs-card">
+                              <div>
+                                 <div class="wcs-card-header">
+                                    <div class="wcs-stars">★★★★★</div>
+                                    <div class="wcs-quote-icon">
+                                       <svg viewBox="0 0 53 38"><path d="M52.9994 15.1432H41.6423L49.2138 0.000377655H37.8566L30.2852 15.1432V37.8574H52.9994V15.1432Z"/><path d="M22.7143 37.8574V15.1432H11.3571L18.9286 0.000377655H7.57148L-1.90735e-06 15.1432V37.8574H22.7143Z"/></svg>
+                                    </div>
+                                 </div>
+                                 <p class="wcs-quote-text">"The Sonic Media transformed our digital presence completely. Our leads increased by 300% in just 3 months of working with them."</p>
+                              </div>
+                              <div>
+                                 <div class="wcs-author-box">
+                                    <div class="wcs-avatar">A</div>
+                                    <div class="wcs-author-info">
+                                       <h4 class="wcs-author-name">Amit Oza</h4>
+                                       <span class="wcs-author-location">Calgary, Canada</span>
+                                    </div>
+                                 </div>
+                                 <div class="wcs-pill"><span class="wcs-pill-icon">📈</span> 300% Lead Growth</div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="swiper-slide">
+                           <div class="wcs-card">
+                              <div>
+                                 <div class="wcs-card-header">
+                                    <div class="wcs-stars">★★★★★</div>
+                                    <div class="wcs-quote-icon">
+                                       <svg viewBox="0 0 53 38"><path d="M52.9994 15.1432H41.6423L49.2138 0.000377655H37.8566L30.2852 15.1432V37.8574H52.9994V15.1432Z"/><path d="M22.7143 37.8574V15.1432H11.3571L18.9286 0.000377655H7.57148L-1.90735e-06 15.1432V37.8574H22.7143Z"/></svg>
+                                    </div>
+                                 </div>
+                                 <p class="wcs-quote-text">"Great team with good expertise. They built a professional website for our accounting firm that helped us get more clients."</p>
+                              </div>
+                              <div>
+                                 <div class="wcs-author-box">
+                                    <div class="wcs-avatar">M</div>
+                                    <div class="wcs-author-info">
+                                       <h4 class="wcs-author-name">Mohit Chimnani</h4>
+                                       <span class="wcs-author-location">Ahmedabad, India</span>
+                                    </div>
+                                 </div>
+                                 <div class="wcs-pill"><span class="wcs-pill-icon">💰</span> 4X More Client Inquiries</div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="swiper-slide">
+                           <div class="wcs-card">
+                              <div>
+                                 <div class="wcs-card-header">
+                                    <div class="wcs-stars">★★★★★</div>
+                                    <div class="wcs-quote-icon">
+                                       <svg viewBox="0 0 53 38"><path d="M52.9994 15.1432H41.6423L49.2138 0.000377655H37.8566L30.2852 15.1432V37.8574H52.9994V15.1432Z"/><path d="M22.7143 37.8574V15.1432H11.3571L18.9286 0.000377655H7.57148L-1.90735e-06 15.1432V37.8574H22.7143Z"/></svg>
+                                    </div>
+                                 </div>
+                                 <p class="wcs-quote-text">"Working with Reak was a turning point for our brand. They took our ideas and transformed them into a cohesive, striking identity."</p>
+                              </div>
+                              <div>
+                                 <div class="wcs-author-box">
+                                    <div class="wcs-avatar">J</div>
+                                    <div class="wcs-author-info">
+                                       <h4 class="wcs-author-name">Jim Reynold</h4>
+                                       <span class="wcs-author-location">Marketing Manager, NY</span>
+                                    </div>
+                                 </div>
+                                 <div class="wcs-pill"><span class="wcs-pill-icon">🌐</span> Global Brand Reach</div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="swiper-slide">
+                           <div class="wcs-card">
+                              <div>
+                                 <div class="wcs-card-header">
+                                    <div class="wcs-stars">★★★★★</div>
+                                    <div class="wcs-quote-icon">
+                                       <svg viewBox="0 0 53 38"><path d="M52.9994 15.1432H41.6423L49.2138 0.000377655H37.8566L30.2852 15.1432V37.8574H52.9994V15.1432Z"/><path d="M22.7143 37.8574V15.1432H11.3571L18.9286 0.000377655H7.57148L-1.90735e-06 15.1432V37.8574H22.7143Z"/></svg>
+                                    </div>
+                                 </div>
+                                 <p class="wcs-quote-text">"Outstanding design quality and fast delivery. Their team truly understands user experience and modern aesthetic design."</p>
+                              </div>
+                              <div>
+                                 <div class="wcs-author-box">
+                                    <div class="wcs-avatar">D</div>
+                                    <div class="wcs-author-info">
+                                       <h4 class="wcs-author-name">Donald Ponce</h4>
+                                       <span class="wcs-author-location">Product Lead, SF</span>
+                                    </div>
+                                 </div>
+                                 <div class="wcs-pill"><span class="wcs-pill-icon">🚀</span> 250% Revenue Increase</div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="swiper-slide">
+                           <div class="wcs-card">
+                              <div>
+                                 <div class="wcs-card-header">
+                                    <div class="wcs-stars">★★★★★</div>
+                                    <div class="wcs-quote-icon">
+                                       <svg viewBox="0 0 53 38"><path d="M52.9994 15.1432H41.6423L49.2138 0.000377655H37.8566L30.2852 15.1432V37.8574H52.9994V15.1432Z"/><path d="M22.7143 37.8574V15.1432H11.3571L18.9286 0.000377655H7.57148L-1.90735e-06 15.1432V37.8574H22.7143Z"/></svg>
+                                    </div>
+                                 </div>
+                                 <p class="wcs-quote-text">"Extremely impressed by their attention to detail and proactive communication throughout our digital transformation."</p>
+                              </div>
+                              <div>
+                                 <div class="wcs-author-box">
+                                    <div class="wcs-avatar">S</div>
+                                    <div class="wcs-author-info">
+                                       <h4 class="wcs-author-name">Wallace Scott</h4>
+                                       <span class="wcs-author-location">Tech Director, London</span>
+                                    </div>
+                                 </div>
+                                 <div class="wcs-pill"><span class="wcs-pill-icon">⚡</span> High Performing Platform</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <script>
+                  document.addEventListener("DOMContentLoaded", function () {
+                     function initWcsSwiper() {
+                        if (typeof Swiper !== "undefined") {
+                           new Swiper("#wcsSwiper", {
+                              slidesPerView: 1.2,
+                              spaceBetween: 20,
+                              loop: true,
+                              speed: 8000,
+                              allowTouchMove: true,
+                              autoplay: {
+                                 delay: 0,
+                                 disableOnInteraction: false,
+                                 pauseOnMouseEnter: true
+                              },
+                              breakpoints: {
+                                 576: { slidesPerView: 1.8, spaceBetween: 20 },
+                                 768: { slidesPerView: 2.4, spaceBetween: 24 },
+                                 992: { slidesPerView: 3.2, spaceBetween: 24 },
+                                 1200: { slidesPerView: 3.8, spaceBetween: 26 }
+                              }
+                           });
+                        }
+                     }
+                     initWcsSwiper();
+                  });
+               </script>
+            </div>
+            <!-- testimonial area end -->
 
             <!-- service area start -->
             <div class="oit-service-area dg-service-style ba-service-style p-relative pt-120 pb-120"
@@ -2835,154 +3169,7 @@
             </div>
             <!-- bento-card area end -->
 
-            <!-- testimonial area start -->
-            <div class="dg-testimonial-area rotate-section p-relative pt-150 pb-150 z-index-1">
-               <div class="dg-testimonial-shape d-none d-lg-block">
-                  <img class="rotate-on-scroll" src="assets/img/shape/testimonial-2.png" alt="">
-               </div>
-               <div class="container">
-                  <div class="row">
-                     <div class="col-xl-2">
-                        <div class="oit-section-subtitle-box text-center text-lg-start">
-                           <span class="oit-section-subtitle">Testimonial</span>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="offset-xl-1 col-xl-10">
-                        <div class="oit-section-title-box pl-70 mb-90 text-center text-lg-start">
-                           <h3 class="oit-section-title oit-title-revel">Reflections from <br><span class="pl-265">our
-                                 clients</span></h3>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-12">
-                        <div class="dg-testimonial-wrapper">
-                           <div class="swiper-container dg-testimonial-active">
-                              <div class="swiper-wrapper">
-                                 <div class="swiper-slide">
-                                    <div class="dg-testimonial-item">
-                                       <span class="quote d-block pb-70">
-                                          <svg width="53" height="38" viewBox="0 0 53 38" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                             <path
-                                                d="M52.9994 15.1432H41.6423L49.2138 0.000377655H37.8566L30.2852 15.1432V37.8574H52.9994V15.1432Z"
-                                                fill="currentcolor" />
-                                             <path
-                                                d="M22.7143 37.8574V15.1432H11.3571L18.9286 0.000377655H7.57148L-1.90735e-06 15.1432V37.8574H22.7143Z"
-                                                fill="currentcolor" />
-                                          </svg>
-                                       </span>
-                                       <p class="text-large mb-25">Working with Reak was a turning point for our brand.
-                                          They took our ideas and</p>
-                                       <p class="text-small mb-70">To empower brands through bold design, strategic
-                                          thinking, and <span>digital experiences</span> that inspire action and create
-                                          lasting impact. To help <span>businesses</span> stand out through thoughtful
-                                          branding</p>
-                                       <div class="dg-testimonial-authour-box d-flex align-items-center">
-                                          <div class="dg-testimonial-authour-thumb mr-15">
-                                             <img class="border-radius-10" src="assets/img/avater/avater-2.png" alt="">
-                                          </div>
-                                          <div class="dg-testimonial-authour-info">
-                                             <h3 class="dg-testimonial-authour-title">Jim Reynold</h3>
-                                             <span>Marketing Manager</span>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide">
-                                    <div class="dg-testimonial-item">
-                                       <span class="quote d-block pb-70">
-                                          <svg width="53" height="38" viewBox="0 0 53 38" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                             <path
-                                                d="M52.9994 15.1432H41.6423L49.2138 0.000377655H37.8566L30.2852 15.1432V37.8574H52.9994V15.1432Z"
-                                                fill="currentcolor" />
-                                             <path
-                                                d="M22.7143 37.8574V15.1432H11.3571L18.9286 0.000377655H7.57148L-1.90735e-06 15.1432V37.8574H22.7143Z"
-                                                fill="currentcolor" />
-                                          </svg>
-                                       </span>
-                                       <p class="text-large large-style-2 mb-60">Working with Reak was a turning point
-                                          for our brand. They took our ideas and transformed them into a cohesive stir
-                                          king identity that truly exceeded our expectation.</p>
-                                       <div class="dg-testimonial-authour-box d-flex align-items-center">
-                                          <div class="dg-testimonial-authour-thumb mr-15">
-                                             <img class="border-radius-10" src="assets/img/avater/avater-3.png" alt="">
-                                          </div>
-                                          <div class="dg-testimonial-authour-info">
-                                             <h3 class="dg-testimonial-authour-title">Donald Ponce</h3>
-                                             <span>Marketing Manager</span>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide">
-                                    <div class="dg-testimonial-item">
-                                       <span class="quote d-block pb-70">
-                                          <svg width="53" height="38" viewBox="0 0 53 38" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                             <path
-                                                d="M52.9994 15.1432H41.6423L49.2138 0.000377655H37.8566L30.2852 15.1432V37.8574H52.9994V15.1432Z"
-                                                fill="currentcolor" />
-                                             <path
-                                                d="M22.7143 37.8574V15.1432H11.3571L18.9286 0.000377655H7.57148L-1.90735e-06 15.1432V37.8574H22.7143Z"
-                                                fill="currentcolor" />
-                                          </svg>
-                                       </span>
-                                       <p class="text-large large-style-2 mb-60">Working with Reak was a turning point
-                                          for our brand. They took our ideas and transformed them into a cohesive stir
-                                          king identity that truly exceeded our expectation.</p>
-                                       <div class="dg-testimonial-authour-box d-flex align-items-center">
-                                          <div class="dg-testimonial-authour-thumb mr-15">
-                                             <img class="border-radius-10" src="assets/img/avater/avater-4.png" alt="">
-                                          </div>
-                                          <div class="dg-testimonial-authour-info">
-                                             <h3 class="dg-testimonial-authour-title">Wallace Scott</h3>
-                                             <span>Marketing Manager</span>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide">
-                                    <div class="dg-testimonial-item">
-                                       <span class="quote d-block pb-70">
-                                          <svg width="53" height="38" viewBox="0 0 53 38" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                             <path
-                                                d="M52.9994 15.1432H41.6423L49.2138 0.000377655H37.8566L30.2852 15.1432V37.8574H52.9994V15.1432Z"
-                                                fill="currentcolor" />
-                                             <path
-                                                d="M22.7143 37.8574V15.1432H11.3571L18.9286 0.000377655H7.57148L-1.90735e-06 15.1432V37.8574H22.7143Z"
-                                                fill="currentcolor" />
-                                          </svg>
-                                       </span>
-                                       <p class="text-large mb-25">Working with Reak was a turning point for our brand.
-                                          They took our ideas and</p>
-                                       <p class="text-small mb-70">To empower brands through bold design, strategic
-                                          thinking, and <span>digital experiences</span> that inspire action and create
-                                          lasting impact. To help <span>businesses</span> stand out through thoughtful
-                                          branding</p>
-                                       <div class="dg-testimonial-authour-box d-flex align-items-center">
-                                          <div class="dg-testimonial-authour-thumb mr-15">
-                                             <img class="border-radius-10" src="assets/img/avater/avater-2.png" alt="">
-                                          </div>
-                                          <div class="dg-testimonial-authour-info">
-                                             <h3 class="dg-testimonial-authour-title">Jim Reynold</h3>
-                                             <span>Marketing Manager</span>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- testimonial area end -->
+
 
             <!-- team area start -->
             <div class="dg-team-area p-relative pt-130 pb-150" data-bg-color="#000"
