@@ -7505,8 +7505,12 @@ input[type=color] {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .reak-dark .dg-contact-area.faq-style .dg-contact-textarea-box textarea {
+  color: var(--oit-clr-white);
   background-color: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.reak-dark .dg-contact-area.faq-style .dg-contact-textarea-box textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
 }
 .reak-dark .dg-contact-area.faq-style .dg-contact-select .nice-select span.current {
   color: rgba(255, 255, 255, 0.8);

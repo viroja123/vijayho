@@ -940,6 +940,8 @@
                      border: 1px solid rgba(255, 255, 255, 0.08);
                      border-radius: 24px;
                      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+                     max-width: 280px;
+                     margin: 0 auto;
                   }
 
                   .cm-video-card:hover {
@@ -950,10 +952,10 @@
 
                   .cm-video-thumb {
                      aspect-ratio: 9 / 15;
-                     max-height: 380px;
+                     max-height: 400px;
                      width: 100%;
                      border-radius: 24px 24px 0 0;
-                     overflow: hidden;
+                     /* overflow: hidden; */
                   }
 
                   .cm-video-thumb img {
@@ -1358,31 +1360,31 @@
                      if (typeof Swiper !== 'undefined') {
                         ugcSwiper = new Swiper('.cm-swiper-ugc', {
                            slidesPerView: 1,
-                           spaceBetween: 24,
+                           spaceBetween: 10,
                            loop: false,
                            navigation: {
                               nextEl: '#cmNextBtn',
                               prevEl: '#cmPrevBtn',
                            },
                            breakpoints: {
-                              576: { slidesPerView: 2, spaceBetween: 20 },
-                              768: { slidesPerView: 3, spaceBetween: 24 },
-                              1200: { slidesPerView: 4, spaceBetween: 24 }
+                              576: { slidesPerView: 2, spaceBetween: 16 },
+                              768: { slidesPerView: 3, spaceBetween: 16 },
+                              1200: { slidesPerView: 4, spaceBetween: 16 }
                            }
                         });
 
                         tvcSwiper = new Swiper('.cm-swiper-tvc', {
                            slidesPerView: 1,
-                           spaceBetween: 24,
+                           spaceBetween: 10,
                            loop: false,
                            navigation: {
                               nextEl: '#cmNextBtn',
                               prevEl: '#cmPrevBtn',
                            },
                            breakpoints: {
-                              576: { slidesPerView: 2, spaceBetween: 20 },
-                              768: { slidesPerView: 3, spaceBetween: 24 },
-                              1200: { slidesPerView: 4, spaceBetween: 24 }
+                              576: { slidesPerView: 2, spaceBetween: 16 },
+                              768: { slidesPerView: 3, spaceBetween: 16 },
+                              1200: { slidesPerView: 4, spaceBetween: 16 }
                            }
                         });
                      }
@@ -1945,8 +1947,8 @@
                   }
 
                   .wcs-card {
-                     background: #131415;
-                     border: 1px solid rgba(255, 255, 255, 0.08);
+                     background: #9f8be7;
+                     border: 1px solid rgba(255, 255, 255, 0.25);
                      border-radius: 18px;
                      padding: 26px 24px;
                      display: flex;
@@ -1955,13 +1957,13 @@
                      min-height: 290px;
                      height: 100%;
                      transition: all 0.3s ease;
-                     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
                   }
 
                   .wcs-card:hover {
-                     border-color: rgba(255, 241, 230, 0.556);
+                     border-color: rgba(255, 255, 255, 0.6);
                      transform: translateY(-4px);
-                     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+                     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
                   }
 
                   .wcs-card-header {
@@ -1972,7 +1974,7 @@
                   }
 
                   .wcs-stars {
-                     color: #FF9500;
+                     color: #FF7A00;
                      font-size: 14px;
                      letter-spacing: 2px;
                   }
@@ -1980,13 +1982,13 @@
                   .wcs-quote-icon svg {
                      width: 26px;
                      height: 20px;
-                     fill: rgba(255, 255, 255, 0.08);
+                     fill: rgba(30, 20, 60, 0.18);
                   }
 
                   .wcs-quote-text {
                      font-size: 14.5px;
                      line-height: 1.6;
-                     color: #D2D2D2;
+                     color: #1A1333;
                      font-style: italic;
                      margin-bottom: 22px;
                      flex-grow: 1;
@@ -2003,7 +2005,7 @@
                      width: 44px;
                      height: 44px;
                      border-radius: 50%;
-                     background: linear-gradient(135deg, #FF6B00 0%, #FF2E00 100%);
+                     background: linear-gradient(135deg, #3D2282 0%, #201148 100%);
                      color: #FFFFFF;
                      font-weight: 700;
                      font-size: 16px;
@@ -2011,7 +2013,7 @@
                      align-items: center;
                      justify-content: center;
                      flex-shrink: 0;
-                     box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3);
+                     box-shadow: 0 4px 12px rgba(32, 17, 72, 0.3);
                   }
 
                   .wcs-author-info {
@@ -2022,13 +2024,13 @@
                   .wcs-author-name {
                      font-size: 15px;
                      font-weight: 700;
-                     color: #FFFFFF;
+                     color: #120E24;
                      margin: 0 0 2px 0;
                   }
 
                   .wcs-author-location {
                      font-size: 12px;
-                     color: #888888;
+                     color: #4D436E;
                      margin: 0;
                   }
 
@@ -2038,9 +2040,9 @@
                      gap: 8px;
                      padding: 6px 14px;
                      border-radius: 50px;
-                     background: rgba(255, 110, 0, 0.08);
-                     border: 1px solid rgba(255, 110, 0, 0.25);
-                     color: #FF8533;
+                     background: rgba(255, 255, 255, 0.45);
+                     border: 1px solid rgba(255, 255, 255, 0.65);
+                     color: #211545;
                      font-size: 12px;
                      font-weight: 600;
                      align-self: flex-start;
@@ -2276,6 +2278,14 @@
             <!-- testimonial area end -->
 
             <!-- contact area start -->
+            <style>
+               .dg-contact-textarea-box textarea {
+                  color: #fff !important;
+               }
+               .dg-contact-textarea-box textarea::placeholder {
+                  color: rgba(255, 255, 255, 0.8) !important;
+               }
+            </style>
             <div class="dg-contact-area faq-style fix z-index-1 p-relative pt-150 pb-150" data-bg-color="#101216">
                <div class="dg-contact-shape-1">
                   <img data-speed=".5" src="assets/img/shape/career-1.png" alt="">
@@ -2291,23 +2301,16 @@
                            <h3 class="oit-section-title fsz-60 mb-25">Have A project idea <br> in mind? let’s get <br>
                               Started</h3>
                            <div class="dg-contact-info-wrap d-flex mb-60">
-                              <div class="dg-contact-info mr-55">
-                                 <span>London</span>
-                                 <a href="https://www.google.com/maps/@25.4452469,92.8253369,12.17z?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D"
-                                    target="_blank">
-                                    19-21 Mortimer St, <br> London W1T 3JE, United <br> Kingdom
-                                 </a>
-                              </div>
                               <div class="dg-contact-info">
-                                 <span>Dubai</span>
-                                 <a href="https://www.google.com/maps/@25.4452469,92.8253369,12.17z?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D"
+                                 <span>Surat</span>
+                                 <a href="https://www.google.com/maps/search/?api=1&query=175+Vijay+Nagar+Society+Parvat+Patiya+Surat"
                                     target="_blank">
-                                    B1906 East Wing, Latifa <br> towers, World trade 1, <br> Sheikh Zayed Road 413658
+                                    175, Vijay Nagar Society, <br> Parvat Patiya, Surat, <br> Gujarat, India
                                  </a>
                               </div>
                            </div>
                            <div class="dg-contact-social">
-                              <a href="#">
+                              <a href="https://www.linkedin.com/search/results/all/?keywords=Vijayho%C2%AE&origin=RICH_QUERY_SUGGESTION&heroEntityKey=urn%3Ali%3Aorganization%3A93123458&position=1" target="_blank">
                                  linkedin
                                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -2317,7 +2320,7 @@
                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
                                  </svg>
                               </a>
-                              <a href="#">
+                              <a href="https://www.instagram.com/vijayho.in/" target="_blank">
                                  Instagram
                                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -2327,8 +2330,8 @@
                                        stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
                                  </svg>
                               </a>
-                              <a href="#">
-                                 Twitter
+                              <a href="https://x.com/?lang=en" target="_blank">
+                                 X
                                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M0.599609 8.59961L8.59961 0.599609" stroke="currentcolor"
@@ -2359,7 +2362,7 @@
                                  <div class="col-md-6">
                                     <div class="dg-contact-input-box mb-65">
                                        <label>Email *</label>
-                                       <input type="email" placeholder="your@example.comc">
+                                       <input type="email" placeholder="your@example.com">
                                     </div>
                                  </div>
                                  <div class="col-md-6">
@@ -2368,10 +2371,11 @@
                                        <div class="dg-contact-select">
                                           <select>
                                              <option>Select your service</option>
-                                             <option>Computer Science & Engineering</option>
-                                             <option>Electrical & Electronic Engineering</option>
-                                             <option>Textile Engineering</option>
-                                             <option>Pharmacy</option>
+                                             <option>Web & App Development</option>
+                                             <option>Performance Marketing & SEO</option>
+                                             <option>UGC & Video Production</option>
+                                             <option>Creative Design & Branding</option>
+                                             <option>Meta 360 & Paid Ads</option>
                                           </select>
                                        </div>
                                     </div>
@@ -2381,11 +2385,12 @@
                                        <label>Project Budget *</label>
                                        <div class="dg-contact-select">
                                           <select>
-                                             <option>select your Range</option>
-                                             <option>Computer Science & Engineering</option>
-                                             <option>Electrical & Electronic Engineering</option>
-                                             <option>Textile Engineering</option>
-                                             <option>Pharmacy</option>
+                                             <option>Select your range</option>
+                                             <option>Below ₹50,000 / $600</option>
+                                             <option>₹50,000 - ₹1,50,000 / $600 - $1,800</option>
+                                             <option>₹1,50,000 - ₹3,00,000 / $1,800 - $3,500</option>
+                                             <option>₹3,00,000 - ₹5,00,000 / $3,500 - $6,000</option>
+                                             <option>₹5,00,000+ / $6,000+</option>
                                           </select>
                                        </div>
                                     </div>
