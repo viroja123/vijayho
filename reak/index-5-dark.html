@@ -88,15 +88,42 @@
    <header>
 
       <!-- header area start -->
+      <style>
+         .oit-header-menu-2 > nav > ul {
+            display: flex !important;
+            align-items: center !important;
+            flex-wrap: nowrap !important;
+            white-space: nowrap !important;
+         }
+         .oit-header-menu-2 > nav > ul > li {
+            margin: 0 13px !important;
+            white-space: nowrap !important;
+         }
+         .oit-header-menu-2 > nav > ul > li > a {
+            font-size: 14.5px !important;
+            white-space: nowrap !important;
+         }
+         @media (min-width: 1200px) and (max-width: 1400px) {
+            .oit-header-menu-2 > nav > ul > li {
+               margin: 0 9px !important;
+            }
+            .oit-header-menu-2 > nav > ul > li > a {
+               font-size: 13.5px !important;
+            }
+         }
+         .oit-header-action {
+            margin-left: 20px !important;
+         }
+      </style>
       <div class="oit-header-area oit-header-transparent">
-         <div class="container">
+         <div class="container-fluid" style="max-width: 1720px; padding-left: 40px; padding-right: 40px;">
             <div class="row align-items-center">
-               <div class="col-lg-3 col-md-4 col-4">
+               <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-4 col-4">
                   <div class="oit-header-logo">
-                     <a href="index.html"><img data-width="200" src="assets/img/logo/logo-white.png" alt=""></a>
+                     <a href="index-5-dark.html"><img data-width="200" src="assets/img/logo/logo-white.png" alt="Vijayho"></a>
                   </div>
                </div>
-               <div class="col-lg-9 col-md-8 col-8">
+               <div class="col-xxl-10 col-xl-10 col-lg-9 col-md-8 col-8">
                   <div class="oit-header-wrap d-flex justify-content-end align-items-center">
                      <div class="oit-header-menu oit-header-menu-2 d-none d-xl-block">
                         <nav class="oit-menu-content">
