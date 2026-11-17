@@ -1318,12 +1318,29 @@ input[type=color] {
   display: inline-block;
   color: var(--oit-clr-black);
 }
+.oit-header-menu-2 > nav > ul {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
+}
 .oit-header-menu-2 > nav > ul > li {
-  margin: 0 30px;
+  margin: 0 13px !important;
+  white-space: nowrap !important;
 }
 .oit-header-menu-2 > nav > ul > li > a {
+  font-size: 14.5px !important;
   text-transform: uppercase;
   color: var(--oit-clr-white);
+  white-space: nowrap !important;
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .oit-header-menu-2 > nav > ul > li {
+    margin: 0 9px !important;
+  }
+  .oit-header-menu-2 > nav > ul > li > a {
+    font-size: 13.5px !important;
+  }
 }
 .oit-header-bdr {
   border-bottom: 1px dashed var(--oit-clr-black);
