@@ -190,204 +190,764 @@
    <div id="smooth-wrapper">
       <div id="smooth-content">
 
-         <main>
-            <!-- breadcrumb area start -->            
-            <div class="blog-details-breadcrumb-area career-style breadcrumb-style-2 rotate-section p-relative pt-180 pb-100">    
-               <div class="container">
-                  <div class="blog-details-breadcrumb-badges badges-style-2 mb-20">
-                     <div>
-                        <span class="badge text-white" style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 6px 16px;">Home</span>
-                        <span class="text-white mx-2">&bull;</span>
-                        <span class="badge text-white" style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 6px 16px;">Tech Services</span>
-                     </div>
-                  </div>
-                  <h1 class="text-white font-weight-bold" style="font-size: 56px; line-height: 1.2;">Meta 360 Marketing</h1>
-                  <p class="mt-20" style="font-size: 20px; color: rgba(255,255,255,0.8); max-width: 800px;">End-to-End Meta Ads & Social Commerce Growth Engine</p>
+         
+<main>
+   <!-- 1. HERO SECTION -->
+   <style>
+      @keyframes vjFloat {
+         0%, 100% { transform: translateY(0px); }
+         50% { transform: translateY(-8px); }
+      }
+      @keyframes pingRadar {
+         0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+         70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+         100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      }
+      @keyframes eqBounce {
+         0%, 100% { height: 4px; }
+         50% { height: 20px; }
+      }
+      @keyframes spinDisc {
+         0% { transform: rotate(0deg); }
+         100% { transform: rotate(360deg); }
+      }
+      @keyframes floatHeart {
+         0% { transform: translateY(0) scale(0.8); opacity: 0; }
+         30% { opacity: 0.9; }
+         100% { transform: translateY(-70px) scale(1.3); opacity: 0; }
+      }
+      @keyframes glowShift {
+         0%, 100% { border-color: rgba(255,255,255,0.08); box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+         50% { border-color: rgba(255,255,255,0.22); box-shadow: 0 15px 50px rgba(255,255,255,0.04); }
+      }
+
+      .vj-meta-hero-area {
+         background: radial-gradient(circle at 50% 15%, #151922 0%, #0D0D0D 80%);
+         position: relative;
+         z-index: 1;
+         padding-top: 190px;
+         padding-bottom: 120px;
+         overflow: hidden;
+      }
+      .vj-meta-partner-card {
+         animation: vjFloat 4.5s ease-in-out infinite;
+         display: inline-flex;
+         align-items: center;
+         gap: 16px;
+         background: rgba(255, 255, 255, 0.04);
+         border: 1px solid rgba(255, 255, 255, 0.15);
+         padding: 12px 28px;
+         border-radius: 50px;
+         backdrop-filter: blur(12px);
+         box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      }
+      .vj-radar-dot {
+         width: 10px;
+         height: 10px;
+         background: #25D366;
+         border-radius: 50%;
+         display: inline-block;
+         animation: pingRadar 2s infinite;
+      }
+      .vj-metric-box {
+         background: rgba(255,255,255,0.02);
+         border: 1px solid rgba(255,255,255,0.08);
+         border-radius: 18px;
+         padding: 22px 14px;
+         min-height: 125px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         transition: all 0.3s ease;
+      }
+      .vj-metric-box:hover {
+         transform: translateY(-5px);
+         border-color: rgba(255,255,255,0.2);
+         background: rgba(255,255,255,0.04);
+      }
+   </style>
+
+   <div class="vj-meta-hero-area text-center">
+      <div class="container position-relative" style="z-index: 2;">
+         <!-- Breadcrumb -->
+         <div class="d-inline-flex align-items-center gap-2 mb-4 px-3 py-1 fade-anim" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 30px;">
+            <a href="index-5-dark.html" style="color: #AAAAAA; font-size: 12px; text-decoration: none;">Home</a>
+            <span style="color: #666666; font-size: 11px;">/</span>
+            <a href="tech-services-dark.html" style="color: #AAAAAA; font-size: 12px; text-decoration: none;">Tech Services</a>
+            <span style="color: #666666; font-size: 11px;">/</span>
+            <span style="color: #FFFFFF; font-size: 12px; font-weight: 600;">Meta 360 Ads</span>
+         </div>
+
+         <!-- Certified Partner Pill -->
+         <div class="mb-4 fade-anim" data-delay="0.1">
+            <div class="vj-meta-partner-card">
+               <i class="fab fa-meta" style="font-size: 26px; color: #FFFFFF;"></i>
+               <div class="text-start">
+                  <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #888888; font-weight: 700;">OFFICIAL PARTNER</div>
+                  <div style="font-size: 15px; font-weight: 700; color: #FFFFFF; line-height: 1.1;">Meta Certified Agency Partner</div>
+               </div>
+               <div style="width: 1px; height: 26px; background: rgba(255,255,255,0.15); margin: 0 4px;"></div>
+               <div class="d-flex align-items-center gap-2">
+                  <span class="vj-radar-dot"></span>
+                  <span style="font-size: 12px; color: #CCCCCC; font-weight: 600;">CAPI Active</span>
                </div>
             </div>
-            <!-- breadcrumb area end -->
-            
-            <!-- details area start -->
-            <div class="service-details-area pb-115">              
-               <div class="container">
-                  <div class="row justify-content-center">
-                     <div class="col-xl-10">
-                        <div class="service-details-content">
-                           <div class="postbox-dsc mb-55" style="background: rgba(255,255,255,0.03); padding: 40px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.08);">
-                              <p style="font-size: 18px; line-height: 1.8; color: rgba(255,255,255,0.85);">Our Meta 360 solution covers complete Meta Pixel & Conversions API integration, audience segmentation, dynamic creative testing, and high-ROAS retargeting campaigns on Facebook and Instagram.</p>
+         </div>
+
+         <!-- Headline -->
+         <h1 class="oit-title-revel text-white mb-3" style="font-size: 56px; font-weight: 900; line-height: 1.12; letter-spacing: -1.5px; max-width: 950px; margin: 0 auto;">
+            SCALE EXPONENTIALLY WITH <br>
+            <span style="background: linear-gradient(90deg, #FFFFFF 0%, #888888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">THE META 360 ADS ENGINE</span>
+         </h1>
+
+         <p class="fade-anim mx-auto" data-delay="0.2" style="max-width: 740px; font-size: 17px; color: #999999; line-height: 1.7; margin-bottom: 45px !important;">
+            We don't "boost posts". We engineer complete high-velocity Meta funnel ecosystems across Instagram Reels, WhatsApp automation, and dynamic catalog feeds with server-side CAPI tracking.
+         </p>
+
+         <!-- 4 Live Animated Counters -->
+         <div class="row g-3 justify-content-center mx-auto fade-anim" data-delay="0.3" style="max-width: 980px; margin-bottom: 45px !important;">
+            <div class="col-6 col-md-3">
+               <div class="vj-metric-box">
+                  <div class="text-white" style="font-size: 32px; font-weight: 900; line-height: 1.1;">
+                     <span class="vj-counter" data-target="4.82">4.82</span>x
+                  </div>
+                  <div style="font-size: 11px; color: #888888; text-transform: uppercase; margin-top: 8px; font-weight: 600; letter-spacing: 0.5px;">Average Blended ROAS</div>
+               </div>
+            </div>
+            <div class="col-6 col-md-3">
+               <div class="vj-metric-box">
+                  <div class="text-white" style="font-size: 32px; font-weight: 900; line-height: 1.1;">
+                     <span class="vj-counter" data-target="100">100</span>M+
+                  </div>
+                  <div style="font-size: 11px; color: #888888; text-transform: uppercase; margin-top: 8px; font-weight: 600; letter-spacing: 0.5px;">Targeted Impressions</div>
+               </div>
+            </div>
+            <div class="col-6 col-md-3">
+               <div class="vj-metric-box">
+                  <div class="text-white" style="font-size: 32px; font-weight: 900; line-height: 1.1;">
+                     <span class="vj-counter" data-target="9.8">9.8</span>/10
+                  </div>
+                  <div style="font-size: 11px; color: #888888; text-transform: uppercase; margin-top: 8px; font-weight: 600; letter-spacing: 0.5px; white-space: nowrap;">CAPI Event Match Quality</div>
+               </div>
+            </div>
+            <div class="col-6 col-md-3">
+               <div class="vj-metric-box">
+                  <div class="text-white" style="font-size: 32px; font-weight: 900; line-height: 1.1;">
+                     ₹<span class="vj-counter" data-target="12">12</span>Cr+
+                  </div>
+                  <div style="font-size: 11px; color: #888888; text-transform: uppercase; margin-top: 8px; font-weight: 600; letter-spacing: 0.5px;">Client Ad Spend Managed</div>
+               </div>
+            </div>
+         </div>
+
+         <!-- CTA Buttons -->
+         <div class="d-flex flex-wrap justify-content-center gap-3 fade-anim" data-delay="0.4">
+            <a href="#vjRoasSimulator" class="d-inline-flex align-items-center gap-2 px-5 py-3" style="background: #FFFFFF; color: #000000; font-weight: 700; border-radius: 30px; text-decoration: none; font-size: 15px; box-shadow: 0 10px 30px rgba(255,255,255,0.25); transition: transform 0.2s ease;">
+               <span>Test ROAS Simulator</span>
+               <i class="fas fa-calculator"></i>
+            </a>
+            <a href="contact-v1-dark.html" class="d-inline-flex align-items-center gap-2 px-4 py-3" style="background: rgba(255,255,255,0.06); color: #FFFFFF; font-weight: 600; border: 1px solid rgba(255,255,255,0.15); border-radius: 30px; text-decoration: none; font-size: 15px;">
+               <span>Claim Free Ad Account Audit</span>
+               <i class="fas fa-arrow-right"></i>
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <!-- 2. INTERACTIVE ADS MANAGER COMMAND CENTER & LIVE AD FORMATS -->
+   <style>
+      .vj-dash-container {
+         background: #11141B;
+         border: 1px solid rgba(255,255,255,0.1);
+         border-radius: 24px;
+         overflow: hidden;
+         box-shadow: 0 30px 80px rgba(0,0,0,0.7);
+         animation: glowShift 6s ease-in-out infinite;
+      }
+      .vj-ad-tab-btn {
+         background: rgba(255,255,255,0.04);
+         border: 1px solid rgba(255,255,255,0.08);
+         color: #AAAAAA;
+         border-radius: 20px;
+         padding: 8px 18px;
+         font-size: 13px;
+         font-weight: 600;
+         cursor: pointer;
+         transition: all 0.3s ease;
+      }
+      .vj-ad-tab-btn.active {
+         background: #FFFFFF;
+         color: #000000;
+         border-color: #FFFFFF;
+         box-shadow: 0 4px 15px rgba(255,255,255,0.25);
+      }
+      .vj-reel-heart-float {
+         position: absolute;
+         right: 18px;
+         bottom: 120px;
+         font-size: 20px;
+         color: #FF3366;
+         animation: floatHeart 2.2s infinite ease-out;
+         pointer-events: none;
+      }
+      .vj-disc-spin {
+         animation: spinDisc 4s linear infinite;
+      }
+      .vj-eq-bar {
+         width: 3px;
+         background: #25D366;
+         border-radius: 2px;
+         animation: eqBounce 0.8s ease-in-out infinite alternate;
+      }
+      .vj-eq-bar:nth-child(2) { animation-delay: 0.2s; }
+      .vj-eq-bar:nth-child(3) { animation-delay: 0.4s; }
+      .vj-eq-bar:nth-child(4) { animation-delay: 0.1s; }
+   </style>
+
+   <div class="py-5" style="background: #0B0D11; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
+      <div class="container py-4">
+         <div class="text-center mb-4">
+            <span class="text-uppercase" style="font-size: 12px; letter-spacing: 2px; color: #777777; font-weight: 700;">LIVE CAMPAIGN ENGINE</span>
+            <h2 class="oit-title-revel text-white mt-1" style="font-size: 42px; font-weight: 800;">Real-Time Meta Ads Manager & Ad Mockups</h2>
+            <p style="color: #888888; max-width: 650px; margin: 0 auto; font-size: 15px;">Experience the exact high-performing ad formats and server-side tracking architecture we deploy for high-growth brands.</p>
+         </div>
+
+         <!-- Interactive Ad Format Tabs -->
+         <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+            <button class="vj-ad-tab-btn active" onclick="switchAdFormat('reel')">
+               <i class="fab fa-instagram me-1"></i> 9:16 Reel & Story Video
+            </button>
+            <button class="vj-ad-tab-btn" onclick="switchAdFormat('catalog')">
+               <i class="fas fa-th-large me-1"></i> Dynamic Catalog Carousel
+            </button>
+            <button class="vj-ad-tab-btn" onclick="switchAdFormat('whatsapp')">
+               <i class="fab fa-whatsapp me-1 text-success"></i> WhatsApp Click-to-Chat
+            </button>
+         </div>
+
+         <!-- Main Dashboard Screen -->
+         <div class="vj-dash-container mx-auto" style="max-width: 1100px;">
+            <!-- Topbar -->
+            <div class="d-flex justify-content-between align-items-center px-4 py-3" style="background: #07090C; border-bottom: 1px solid rgba(255,255,255,0.08);">
+               <div class="d-flex align-items-center gap-2">
+                  <span style="width: 12px; height: 12px; border-radius: 50%; background: #FF5F56;"></span>
+                  <span style="width: 12px; height: 12px; border-radius: 50%; background: #FFBD2E;"></span>
+                  <span style="width: 12px; height: 12px; border-radius: 50%; background: #27C93F;"></span>
+                  <span class="ms-3 text-white fw-bold" style="font-size: 13px; font-family: monospace;">Vijayho Ads Manager &bull; Account #VJ-9482</span>
+               </div>
+               <div class="d-flex align-items-center gap-3">
+                  <span class="badge" style="background: rgba(37,211,102,0.15); color: #25D366; font-size: 11px;"><i class="fas fa-check-circle me-1"></i>Server CAPI Match: 9.8/10</span>
+                  <span class="badge" style="background: rgba(255,255,255,0.08); color: #AAAAAA; font-size: 11px;">Advantage+ Active</span>
+               </div>
+            </div>
+
+            <!-- Dashboard Body -->
+            <div class="p-4 p-lg-5">
+               <div class="row align-items-center g-4">
+                  <!-- Left: Interactive Ad Mockup Frame -->
+                  <div class="col-lg-5">
+                     <!-- 1. REEL FORMAT -->
+                     <div id="vjReelAdCard" class="p-3 mx-auto" style="max-width: 320px; background: #000000; border: 4px solid #2A2E39; border-radius: 36px; box-shadow: 0 20px 50px rgba(0,0,0,0.8); position: relative; overflow: hidden;">
+                        <!-- Top header in story -->
+                        <div class="d-flex justify-content-between align-items-center px-2 mb-2" style="position: relative; z-index: 3;">
+                           <div class="d-flex align-items-center gap-2">
+                              <div style="width: 28px; height: 28px; border-radius: 50%; background: #333; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 800; color: #FFF;">VJ</div>
+                              <div>
+                                 <div class="text-white fw-bold" style="font-size: 12px; line-height: 1.1;">vijayho.media</div>
+                                 <div style="font-size: 9px; color: #888;">Sponsored &bull; Instagram Reel</div>
+                              </div>
                            </div>
-
-                           <h3 class="text-white mb-35" style="font-size: 32px;">Key Capabilities & Features</h3>
-                           <div class="row mb-55">
-                              
-    <div class="col-lg-6 mb-20">
-      <ul class="career-details-list">
-        <li>
-          <span>
-            <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.5 0C11.9425 13.782 11.4838 14.331 0 15C11.485 15.669 11.9425 16.2195 12.5 30C13.0575 16.218 13.5162 15.669 25 15C13.515 14.331 13.0575 13.7805 12.5 0Z" fill="#FFFFFF" />
-            </svg>
-            Meta Pixel & CAPI Server-Side Tracking
-          </span>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="col-lg-6 mb-20">
-      <ul class="career-details-list">
-        <li>
-          <span>
-            <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.5 0C11.9425 13.782 11.4838 14.331 0 15C11.485 15.669 11.9425 16.2195 12.5 30C13.0575 16.218 13.5162 15.669 25 15C13.515 14.331 13.0575 13.7805 12.5 0Z" fill="#FFFFFF" />
-            </svg>
-            Custom & Lookalike Audience Building
-          </span>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="col-lg-6 mb-20">
-      <ul class="career-details-list">
-        <li>
-          <span>
-            <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.5 0C11.9425 13.782 11.4838 14.331 0 15C11.485 15.669 11.9425 16.2195 12.5 30C13.0575 16.218 13.5162 15.669 25 15C13.515 14.331 13.0575 13.7805 12.5 0Z" fill="#FFFFFF" />
-            </svg>
-            A/B Creative & Copy Testing
-          </span>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="col-lg-6 mb-20">
-      <ul class="career-details-list">
-        <li>
-          <span>
-            <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.5 0C11.9425 13.782 11.4838 14.331 0 15C11.485 15.669 11.9425 16.2195 12.5 30C13.0575 16.218 13.5162 15.669 25 15C13.515 14.331 13.0575 13.7805 12.5 0Z" fill="#FFFFFF" />
-            </svg>
-            Dynamic Product Ads & Catalog Setup
-          </span>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="col-lg-6 mb-20">
-      <ul class="career-details-list">
-        <li>
-          <span>
-            <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.5 0C11.9425 13.782 11.4838 14.331 0 15C11.485 15.669 11.9425 16.2195 12.5 30C13.0575 16.218 13.5162 15.669 25 15C13.515 14.331 13.0575 13.7805 12.5 0Z" fill="#FFFFFF" />
-            </svg>
-            Funnel-Based Retargeting Campaigns
-          </span>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="col-lg-6 mb-20">
-      <ul class="career-details-list">
-        <li>
-          <span>
-            <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.5 0C11.9425 13.782 11.4838 14.331 0 15C11.485 15.669 11.9425 16.2195 12.5 30C13.0575 16.218 13.5162 15.669 25 15C13.515 14.331 13.0575 13.7805 12.5 0Z" fill="#FFFFFF" />
-            </svg>
-            Real-Time Analytics & ROAS Dashboards
-          </span>
-        </li>
-      </ul>
-    </div>
-  
-                           </div>
-
-                           <h3 class="text-white mb-35" style="font-size: 32px;">Our Process Workflow</h3>
-                           <div class="row mb-55">
-                              
-    <div class="col-xxl-3 col-xl-4 col-md-6">
-      <div class="dg-step-item p-relative mb-35" style="border: 1px solid rgba(255,255,255,0.1); padding: 30px 25px; border-radius: 12px; background: rgba(255,255,255,0.02);">
-        <h4 class="dg-step-big-text" style="color: rgba(255,255,255,0.08);">01</h4>
-        <span style="color: rgba(255,255,255,0.6); font-size: 14px;">Step - 01</span>
-        <h4 class="dg-step-title text-white mt-10 mb-15">Pixel & CAPI Setup</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 15px; margin-bottom: 0;">Configuring precise event tracking and server-to-server data pipelines.</p>
-      </div>
-    </div>
-  
-    <div class="col-xxl-3 col-xl-4 col-md-6">
-      <div class="dg-step-item p-relative mb-35" style="border: 1px solid rgba(255,255,255,0.1); padding: 30px 25px; border-radius: 12px; background: rgba(255,255,255,0.02);">
-        <h4 class="dg-step-big-text" style="color: rgba(255,255,255,0.08);">02</h4>
-        <span style="color: rgba(255,255,255,0.6); font-size: 14px;">Step - 02</span>
-        <h4 class="dg-step-title text-white mt-10 mb-15">Audience Strategy</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 15px; margin-bottom: 0;">Building high-intent custom and lookalike audiences based on first-party data.</p>
-      </div>
-    </div>
-  
-    <div class="col-xxl-3 col-xl-4 col-md-6">
-      <div class="dg-step-item p-relative mb-35" style="border: 1px solid rgba(255,255,255,0.1); padding: 30px 25px; border-radius: 12px; background: rgba(255,255,255,0.02);">
-        <h4 class="dg-step-big-text" style="color: rgba(255,255,255,0.08);">03</h4>
-        <span style="color: rgba(255,255,255,0.6); font-size: 14px;">Step - 03</span>
-        <h4 class="dg-step-title text-white mt-10 mb-15">Creative Execution</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 15px; margin-bottom: 0;">Deploying high-converting ad variations and video hooks.</p>
-      </div>
-    </div>
-  
-    <div class="col-xxl-3 col-xl-4 col-md-6">
-      <div class="dg-step-item p-relative mb-35" style="border: 1px solid rgba(255,255,255,0.1); padding: 30px 25px; border-radius: 12px; background: rgba(255,255,255,0.02);">
-        <h4 class="dg-step-big-text" style="color: rgba(255,255,255,0.08);">04</h4>
-        <span style="color: rgba(255,255,255,0.6); font-size: 14px;">Step - 04</span>
-        <h4 class="dg-step-title text-white mt-10 mb-15">Scale & Optimize</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 15px; margin-bottom: 0;">Scaling winning ad sets while lowering customer acquisition costs.</p>
-      </div>
-    </div>
-  
-                           </div>
-
-                           
-
+                           <i class="fas fa-ellipsis-v text-white" style="font-size: 12px;"></i>
                         </div>
+
+                        <!-- Video Frame Content -->
+                        <div class="position-relative text-center p-4 d-flex flex-column justify-content-between" style="height: 380px; background: linear-gradient(180deg, #1A1F2C 0%, #0D1017 100%); border-radius: 24px; overflow: hidden;">
+                           <!-- Ambient lighting -->
+                           <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); width: 180px; height: 180px; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); filter: blur(30px); pointer-events: none;"></div>
+
+                           <div class="text-start">
+                              <span class="badge" style="background: rgba(255,255,255,0.15); color: #FFF; font-size: 10px;">TOP-OF-FUNNEL 9:16</span>
+                           </div>
+
+                           <div>
+                              <i class="fas fa-play-circle text-white mb-2" style="font-size: 48px; opacity: 0.9; cursor: pointer; transition: transform 0.2s ease;" onclick="this.style.transform='scale(1.2)'; setTimeout(()=>this.style.transform='scale(1)', 200);"></i>
+                              <div class="text-white fw-bold" style="font-size: 15px;">Hook in First 3 Seconds</div>
+                              <div style="font-size: 11px; color: #888;">Dynamic motion typography & sound</div>
+                              <div class="d-flex justify-content-center align-items-center gap-1 mt-2" style="height: 20px;">
+                                 <span class="vj-eq-bar"></span>
+                                 <span class="vj-eq-bar"></span>
+                                 <span class="vj-eq-bar"></span>
+                                 <span class="vj-eq-bar"></span>
+                              </div>
+                           </div>
+
+                           <!-- Floating Heart animation -->
+                           <div class="vj-reel-heart-float"><i class="fas fa-heart"></i></div>
+
+                           <!-- Right side interaction rail -->
+                           <div style="position: absolute; right: 12px; bottom: 50px; display: flex; flex-direction: column; align-items: center; gap: 12px; z-index: 3;">
+                              <div style="cursor: pointer;" onclick="incrementLikes()">
+                                 <i class="fas fa-heart text-danger" style="font-size: 20px;"></i>
+                                 <div id="vjLikesCount" style="font-size: 10px; color: #FFF; font-weight: 700;">24.8K</div>
+                              </div>
+                              <div>
+                                 <i class="fas fa-comment-dots text-white" style="font-size: 20px;"></i>
+                                 <div style="font-size: 10px; color: #FFF; font-weight: 700;">842</div>
+                              </div>
+                              <div>
+                                 <i class="fas fa-share text-white" style="font-size: 18px;"></i>
+                                 <div style="font-size: 10px; color: #FFF; font-weight: 700;">1.9K</div>
+                              </div>
+                              <div class="vj-disc-spin" style="width: 24px; height: 24px; border-radius: 50%; background: #222; border: 2px solid #555; display: flex; align-items: center; justify-content: center;">
+                                 <i class="fas fa-music text-white" style="font-size: 9px;"></i>
+                              </div>
+                           </div>
+
+                           <!-- Bottom CTA in Reel -->
+                           <div class="text-start" style="position: relative; z-index: 2;">
+                              <div class="text-white fw-bold mb-1" style="font-size: 12px;">Scale your revenue today &rarr;</div>
+                              <a href="contact-v1-dark.html" class="btn btn-sm w-100 fw-bold" style="background: #FFFFFF; color: #000; border-radius: 8px; font-size: 11px;">
+                                 Shop Now <i class="fas fa-external-link-alt ms-1"></i>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- 2. CATALOG FORMAT (Hidden by default) -->
+                     <div id="vjCatalogAdCard" class="p-3 mx-auto" style="display: none; max-width: 320px; background: #000000; border: 4px solid #2A2E39; border-radius: 36px; box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
+                        <div class="p-2 mb-2 text-white fw-bold" style="font-size: 12px;">
+                           <i class="fab fa-facebook text-primary me-1"></i> Dynamic Feed Carousel
+                        </div>
+                        <div class="p-4 text-center mb-3" style="background: #141720; border-radius: 20px;">
+                           <i class="fas fa-layer-group text-white mb-2" style="font-size: 42px;"></i>
+                           <div class="text-white fw-bold" style="font-size: 14px;">Automated Product Feed</div>
+                           <div class="text-success fw-bold mt-1" style="font-size: 16px;">₹1,999 <span style="font-size: 11px; color: #888; text-decoration: line-through;">₹3,499</span></div>
+                           <div style="font-size: 11px; color: #888; margin-top: 4px;">Direct Pixel Sync &bull; 0 Manual Edits</div>
+                        </div>
+                        <div class="d-flex gap-2">
+                           <button class="btn btn-sm flex-grow-1 text-dark fw-bold" style="background: #FFF; font-size: 12px; border-radius: 8px;">Order Now</button>
+                           <button class="btn btn-sm text-white" style="background: rgba(255,255,255,0.1); border-radius: 8px;"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                     </div>
+
+                     <!-- 3. WHATSAPP FORMAT (Hidden by default) -->
+                     <div id="vjWhatsappAdCard" class="p-3 mx-auto" style="display: none; max-width: 320px; background: #000000; border: 4px solid #2A2E39; border-radius: 36px; box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
+                        <div class="d-flex align-items-center gap-2 p-2 mb-2" style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+                           <i class="fab fa-whatsapp text-success" style="font-size: 20px;"></i>
+                           <div class="text-white fw-bold" style="font-size: 12px;">Meta Click-to-WhatsApp</div>
+                        </div>
+                        <div class="p-3 mb-3" style="background: #0E1318; border-radius: 16px; min-height: 220px; display: flex; flex-direction: column; justify-content: space-between;">
+                           <div class="p-2 mb-2" style="background: #1A222B; border-radius: 10px; font-size: 11px; color: #DDD;">
+                              "Hi! Saw your Instagram ad for Surat textile wholesale. Can I get the price list?"
+                              <div class="text-end" style="font-size: 9px; color: #888;">Sent &bull; 10:42 AM</div>
+                           </div>
+                           <div id="vjWaTyping" class="p-2 mb-2" style="background: #054740; border-radius: 10px; font-size: 11px; color: #FFF;">
+                              "Hello! Welcome to Vijayho. Here is our 2026 Wholesale Catalog PDF & Special Discount Code: VJ360."
+                              <div class="text-end" style="font-size: 9px; color: #25D366;"><i class="fas fa-check-double"></i> Read &bull; 10:42 AM</div>
+                           </div>
+                        </div>
+                        <a href="https://wa.me/919999999999" target="_blank" class="btn btn-sm w-100 fw-bold text-white" style="background: #25D366; border-radius: 10px;">
+                           <i class="fab fa-whatsapp me-1"></i> Open WhatsApp Chat
+                        </a>
                      </div>
                   </div>
-               </div>
-            </div> 
-            <!-- details area end -->
 
-            <!-- contact area start -->
-            <div class="dg-contact-area z-index-1 p-relative pt-100 pb-100" data-bg-color="#101216">
-               <div class="container">
-                  <div class="row align-items-center">
-                     <div class="col-xl-6 mb-40">
-                        <div class="dg-contact-left oit-section-title-box">
-                           <h3 class="oit-section-title text-white mb-30" style="font-size: 42px;">Ready to Scale Your Business with Meta 360 Marketing?</h3>
-                           <p style="color: rgba(255,255,255,0.7); font-size: 17px;" class="mb-40">Get in touch with our team today for a custom strategy session and tailored proposal.</p>
-                           <a class="oit-btn-border btn-blur-bg d-inline-flex align-items-center justify-content-between" href="contact-v1-dark.html" style="padding: 15px 35px;">
-                              <span class="text-white"><b>SCHEDULE A STRATEGY CALL</b></span>
-                           </a>
+                  <!-- Right: Telemetry & Campaign Rules -->
+                  <div class="col-lg-7">
+                     <div class="mb-4">
+                        <span class="badge" style="background: rgba(255,255,255,0.08); color: #CCC; font-size: 11px; text-transform: uppercase;">REAL-TIME CAMPAIGN METRICS</span>
+                        <h3 class="text-white mt-2" style="font-size: 26px; font-weight: 800;">Full-Funnel Automation Matrix</h3>
+                        <p style="color: #999; font-size: 14px; line-height: 1.6;">Every rupee spent is tracked by our custom server-side Conversions API (CAPI) pipeline, bypassing iOS 14+ ad-blockers and privacy cookies.</p>
+                     </div>
+
+                     <!-- Telemetry Grid -->
+                     <div class="row g-3 mb-4">
+                        <div class="col-6 col-md-4">
+                           <div class="p-3" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px;">
+                              <div style="font-size: 11px; color: #888; text-transform: uppercase;">Average CTR</div>
+                              <div class="text-white fw-bold mt-1" style="font-size: 22px;">3.84%</div>
+                              <div style="font-size: 10px; color: #25D366;"><i class="fas fa-arrow-up me-1"></i>+120% vs industry</div>
+                           </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                           <div class="p-3" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px;">
+                              <div style="font-size: 11px; color: #888; text-transform: uppercase;">Target CPC</div>
+                              <div class="text-white fw-bold mt-1" style="font-size: 22px;">₹4.20</div>
+                              <div style="font-size: 10px; color: #25D366;"><i class="fas fa-check-circle me-1"></i>Optimized bid</div>
+                           </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                           <div class="p-3" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px;">
+                              <div style="font-size: 11px; color: #888; text-transform: uppercase;">CAPI Match Rate</div>
+                              <div class="text-white fw-bold mt-1" style="font-size: 22px;">98.4%</div>
+                              <div style="font-size: 10px; color: #25D366;"><i class="fas fa-shield-alt me-1"></i>Zero lost events</div>
+                           </div>
                         </div>
                      </div>
-                     <div class="col-xl-6 mb-40">
-                        <div class="p-4" style="background: rgba(255,255,255,0.03); border-radius: 16px; border: 1px solid rgba(255,255,255,0.08);">
-                           <form action="#">
-                              <div class="mb-20">
-                                 <label class="text-white mb-10">Your Name *</label>
-                                 <input type="text" class="form-control" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 12px 18px;" placeholder="John Doe">
-                              </div>
-                              <div class="mb-20">
-                                 <label class="text-white mb-10">Email Address *</label>
-                                 <input type="email" class="form-control" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 12px 18px;" placeholder="john@example.com">
-                              </div>
-                              <div class="mb-25">
-                                 <label class="text-white mb-10">Message / Project Details</label>
-                                 <textarea class="form-control" rows="4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 12px 18px;" placeholder="Tell us about your project goals..."></textarea>
-                              </div>
-                              <button type="submit" class="w-100 btn btn-primary py-3" style="background: #fff; color: #000; border: none; font-weight: 700; border-radius: 8px;">Submit Inquiry</button>
-                           </form>
+
+                     <!-- Live Active Chips -->
+                     <div class="p-3" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px;">
+                        <div class="text-white mb-2" style="font-size: 12px; font-weight: 600;">Active Audience Signals & Rules</div>
+                        <div class="d-flex flex-wrap gap-2">
+                           <span class="badge" style="background: rgba(255,255,255,0.08); color: #FFF; font-size: 11px; padding: 6px 12px;">Lookalike 1% High LTV</span>
+                           <span class="badge" style="background: rgba(255,255,255,0.08); color: #FFF; font-size: 11px; padding: 6px 12px;">Advantage+ Shopping Campaign</span>
+                           <span class="badge" style="background: rgba(255,255,255,0.08); color: #FFF; font-size: 11px; padding: 6px 12px;">Server-side Deduplication</span>
+                           <span class="badge" style="background: rgba(255,255,255,0.08); color: #FFF; font-size: 11px; padding: 6px 12px;">Dynamic Creative Testing (DCT)</span>
+                           <span class="badge" style="background: rgba(37,211,102,0.15); color: #25D366; font-size: 11px; padding: 6px 12px;">Auto-Kill Rule: CPA &gt; ₹350</span>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-            <!-- contact area end -->
+         </div>
+      </div>
+   </div>
 
-         </main>
+   <!-- 3. INTERACTIVE ROAS & REVENUE PROJECTION SIMULATOR (UNIQUE!) -->
+   <style>
+      .vj-slider {
+         -webkit-appearance: none;
+         width: 100%;
+         height: 8px;
+         border-radius: 4px;
+         background: rgba(255,255,255,0.15);
+         outline: none;
+         transition: background 0.2s;
+      }
+      .vj-slider::-webkit-slider-thumb {
+         -webkit-appearance: none;
+         appearance: none;
+         width: 26px;
+         height: 26px;
+         border-radius: 50%;
+         background: #FFFFFF;
+         cursor: pointer;
+         box-shadow: 0 0 15px rgba(255,255,255,0.6);
+         transition: transform 0.15s ease;
+      }
+      .vj-slider::-webkit-slider-thumb:hover {
+         transform: scale(1.2);
+      }
+      .vj-sim-card {
+         background: rgba(255,255,255,0.03);
+         border: 1px solid rgba(255,255,255,0.08);
+         border-radius: 18px;
+         padding: 24px;
+         transition: all 0.3s ease;
+      }
+      .vj-sim-card:hover {
+         border-color: rgba(255,255,255,0.2);
+         background: rgba(255,255,255,0.05);
+      }
+   </style>
+
+   <div id="vjRoasSimulator" class="py-5" style="background: radial-gradient(circle at 50% 50%, #171A24 0%, #0D0E12 100%); border-bottom: 1px solid rgba(255,255,255,0.06);">
+      <div class="container py-4">
+         <div class="text-center mb-50" style="margin-bottom: 45px !important;">
+            <span class="text-uppercase" style="font-size: 12px; letter-spacing: 2px; color: #777777; font-weight: 700;">INTERACTIVE CALCULATOR</span>
+            <h2 class="oit-title-revel text-white mt-1" style="font-size: 42px; font-weight: 800;">Meta ROAS & Revenue Projection Simulator</h2>
+            <p style="color: #888888; max-width: 650px; margin: 0 auto; font-size: 15px;">Drag the monthly budget slider to see projected impressions, verified leads, and gross return engineered by Vijayho.</p>
+         </div>
+
+         <!-- Interactive Simulator Container -->
+         <div class="p-4 p-lg-5 mx-auto" style="max-width: 1000px; background: #12151D; border: 1px solid rgba(255,255,255,0.1); border-radius: 28px; box-shadow: 0 30px 80px rgba(0,0,0,0.6);">
+            <!-- Slider Control -->
+            <div class="mb-50" style="margin-bottom: 45px !important;">
+               <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div>
+                     <span style="font-size: 13px; color: #888; text-transform: uppercase; font-weight: 600;">Monthly Meta Ad Budget:</span>
+                     <span class="badge ms-2" style="background: rgba(255,255,255,0.1); color: #FFF;">Scalable Plan</span>
+                  </div>
+                  <div class="text-white fw-bold" style="font-size: 32px; font-family: monospace;">
+                     ₹<span id="vjBudgetDisplay">1,50,000</span>
+                  </div>
+               </div>
+               <input type="range" class="vj-slider" id="vjBudgetSlider" min="30000" max="1000000" step="10000" value="150000" oninput="calculateSimulator(this.value)">
+               <div class="d-flex justify-content-between mt-2" style="font-size: 12px; color: #666;">
+                  <span>₹30,000 / mo</span>
+                  <span>₹5,00,000 / mo</span>
+                  <span>₹10,00,000 / mo</span>
+               </div>
+            </div>
+
+            <!-- Calculated Metrics Row -->
+            <div class="row g-4 mb-4">
+               <div class="col-md-3 col-6">
+                  <div class="vj-sim-card text-center">
+                     <i class="fas fa-eye text-white mb-2" style="font-size: 20px; opacity: 0.8;"></i>
+                     <div style="font-size: 11px; color: #888; text-transform: uppercase;">Estimated Reach</div>
+                     <div id="vjSimReach" class="text-white fw-bold mt-1" style="font-size: 24px;">980K - 1.2M</div>
+                     <div style="font-size: 10px; color: #777;">Targeted pan-India</div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-6">
+                  <div class="vj-sim-card text-center">
+                     <i class="fas fa-user-check text-white mb-2" style="font-size: 20px; opacity: 0.8;"></i>
+                     <div style="font-size: 11px; color: #888; text-transform: uppercase;">Verified Leads</div>
+                     <div id="vjSimLeads" class="text-white fw-bold mt-1" style="font-size: 24px;">420 - 510</div>
+                     <div style="font-size: 10px; color: #25D366;">Pre-qualified</div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-6">
+                  <div class="vj-sim-card text-center">
+                     <i class="fas fa-tags text-white mb-2" style="font-size: 20px; opacity: 0.8;"></i>
+                     <div style="font-size: 11px; color: #888; text-transform: uppercase;">Target CPA</div>
+                     <div id="vjSimCpa" class="text-white fw-bold mt-1" style="font-size: 24px;">₹310</div>
+                     <div style="font-size: 10px; color: #25D366;">Controlled cost</div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-6">
+                  <div class="vj-sim-card text-center" style="background: rgba(37,211,102,0.06); border-color: rgba(37,211,102,0.3);">
+                     <i class="fas fa-chart-line text-success mb-2" style="font-size: 20px;"></i>
+                     <div style="font-size: 11px; color: #25D366; text-transform: uppercase; font-weight: 700;">Projected Gross Revenue</div>
+                     <div id="vjSimRevenue" class="text-white fw-bold mt-1" style="font-size: 24px;">₹7,23,000</div>
+                     <div style="font-size: 10px; color: #25D366; font-weight: 700;">4.82x ROAS Factor</div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Bottom CTA inside simulator -->
+            <div class="p-3 text-center d-flex flex-wrap justify-content-between align-items-center" style="background: rgba(255,255,255,0.02); border-radius: 16px;">
+               <div class="text-start">
+                  <div class="text-white fw-bold" style="font-size: 14px;">Ready to unlock this predictable return for your business?</div>
+                  <div style="font-size: 12px; color: #888;">We audit your creatives, audience architecture, and CAPI setup at zero cost.</div>
+               </div>
+               <a href="contact-v1-dark.html" class="btn text-dark fw-bold px-4 py-2 mt-2 mt-md-0" style="background: #FFF; border-radius: 20px; font-size: 13px;">
+                  Lock In Strategy <i class="fas fa-arrow-right ms-1"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- 4. 4-PILLAR META ENGINE ARCHITECTURE -->
+   <div class="py-5" style="background: #0D0E12;">
+      <div class="container py-4">
+         <div class="text-center mb-50" style="margin-bottom: 45px !important;">
+            <span class="text-uppercase" style="font-size: 12px; letter-spacing: 2px; color: #777777; font-weight: 700;">FULL-FUNNEL ARCHITECTURE</span>
+            <h2 class="oit-title-revel text-white mt-1" style="font-size: 40px; font-weight: 800;">The 4-Pillar Meta 360 Growth Engine</h2>
+            <p style="color: #888888; max-width: 600px; margin: 0 auto; font-size: 15px;">Every step engineered with surgical precision to eliminate budget bleed and maximize conversion velocity.</p>
+         </div>
+
+         <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+               <div class="p-4 h-100" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 20px; transition: all 0.3s ease;" onmouseover="this.style.borderColor='rgba(255,255,255,0.25)'; this.style.transform='translateY(-6px)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'; this.style.transform='translateY(0)';">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                     <span class="badge" style="background: rgba(255,255,255,0.1); color: #FFF; font-size: 10px;">STAGE 01</span>
+                     <i class="fas fa-filter text-white" style="font-size: 16px;"></i>
+                  </div>
+                  <h4 class="text-white mb-2" style="font-size: 19px; font-weight: 700;">TOFU Cold Acquisition</h4>
+                  <p style="color: #888; font-size: 14px; line-height: 1.6;">High-hook Instagram Reels and Story ads targeting Broad Advantage+ and 1% Lookalikes to capture fresh qualified attention at low CPMs.</p>
+                  <ul class="list-unstyled mb-0 mt-3 pt-2" style="font-size: 13px; color: #AAA; border-top: 1px solid rgba(255,255,255,0.06);">
+                     <li class="mb-1"><i class="fas fa-check text-white me-2"></i>3-Second Visual Hook</li>
+                     <li class="mb-1"><i class="fas fa-check text-white me-2"></i>Broad Targeting AI</li>
+                     <li><i class="fas fa-check text-white me-2"></i>Lowest Cost Per Impression</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+               <div class="p-4 h-100" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 20px; transition: all 0.3s ease;" onmouseover="this.style.borderColor='rgba(255,255,255,0.25)'; this.style.transform='translateY(-6px)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'; this.style.transform='translateY(0)';">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                     <span class="badge" style="background: rgba(255,255,255,0.1); color: #FFF; font-size: 10px;">STAGE 02</span>
+                     <i class="fas fa-handshake text-white" style="font-size: 16px;"></i>
+                  </div>
+                  <h4 class="text-white mb-2" style="font-size: 19px; font-weight: 700;">MOFU Trust & Proof</h4>
+                  <p style="color: #888; font-size: 14px; line-height: 1.6;">Social proof, client video testimonials, UGC unboxings, and behind-the-scenes authority builds intense brand confidence.</p>
+                  <ul class="list-unstyled mb-0 mt-3 pt-2" style="font-size: 13px; color: #AAA; border-top: 1px solid rgba(255,255,255,0.06);">
+                     <li class="mb-1"><i class="fas fa-check text-white me-2"></i>Surat Factory Tours</li>
+                     <li class="mb-1"><i class="fas fa-check text-white me-2"></i>Client Case Videos</li>
+                     <li><i class="fas fa-check text-white me-2"></i>Engagement Retargeting</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+               <div class="p-4 h-100" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 20px; transition: all 0.3s ease;" onmouseover="this.style.borderColor='rgba(255,255,255,0.25)'; this.style.transform='translateY(-6px)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'; this.style.transform='translateY(0)';">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                     <span class="badge" style="background: rgba(255,255,255,0.1); color: #FFF; font-size: 10px;">STAGE 03</span>
+                     <i class="fas fa-shopping-cart text-white" style="font-size: 16px;"></i>
+                  </div>
+                  <h4 class="text-white mb-2" style="font-size: 19px; font-weight: 700;">BOFU Cart Recovery</h4>
+                  <p style="color: #888; font-size: 14px; line-height: 1.6;">Dynamic catalog retargeting, limited-time flash incentives, and direct WhatsApp 1-click order completion for warm prospects.</p>
+                  <ul class="list-unstyled mb-0 mt-3 pt-2" style="font-size: 13px; color: #AAA; border-top: 1px solid rgba(255,255,255,0.06);">
+                     <li class="mb-1"><i class="fas fa-check text-white me-2"></i>Abandoned Cart Recovery</li>
+                     <li class="mb-1"><i class="fas fa-check text-white me-2"></i>WhatsApp Direct Checkout</li>
+                     <li><i class="fas fa-check text-white me-2"></i>High Conversion Velocity</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+               <div class="p-4 h-100" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 20px; transition: all 0.3s ease;" onmouseover="this.style.borderColor='rgba(255,255,255,0.25)'; this.style.transform='translateY(-6px)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'; this.style.transform='translateY(0)';">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                     <span class="badge" style="background: rgba(37,211,102,0.15); color: #25D366; font-size: 10px;">STAGE 04</span>
+                     <i class="fas fa-server text-white" style="font-size: 16px;"></i>
+                  </div>
+                  <h4 class="text-white mb-2" style="font-size: 19px; font-weight: 700;">Server-Side CAPI Data</h4>
+                  <p style="color: #888; font-size: 14px; line-height: 1.6;">Direct cloud server event dispatching to Meta with SHA-256 customer matching, ensuring zero data loss and lower ad costs.</p>
+                  <ul class="list-unstyled mb-0 mt-3 pt-2" style="font-size: 13px; color: #AAA; border-top: 1px solid rgba(255,255,255,0.06);">
+                     <li class="mb-1"><i class="fas fa-check text-white me-2"></i>iOS 14+ Bypass</li>
+                     <li class="mb-1"><i class="fas fa-check text-white me-2"></i>9.8/10 Match Score</li>
+                     <li><i class="fas fa-check text-white me-2"></i>Offline Purchase Sync</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- 5. COMPARISON TABLE -->
+   <div class="py-5" style="background: #0B0D11; border-top: 1px solid rgba(255,255,255,0.06);">
+      <div class="container py-4">
+         <div class="text-center mb-50" style="margin-bottom: 45px !important;">
+            <span class="text-uppercase" style="font-size: 12px; letter-spacing: 2px; color: #777777; font-weight: 700;">WHY VIJAYHO OUTPERFORMS</span>
+            <h2 class="oit-title-revel text-white mt-1" style="font-size: 40px; font-weight: 800;">Boosting Posts vs. Vijayho Meta 360</h2>
+         </div>
+
+         <div class="table-responsive mx-auto" style="max-width: 950px;">
+            <table class="table text-white mb-0" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 18px; overflow: hidden;">
+               <thead>
+                  <tr style="background: rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.1);">
+                     <th class="py-4 px-4" style="color: #888; text-transform: uppercase; font-size: 13px;">Strategy Parameter</th>
+                     <th class="py-4 px-4" style="color: #888; text-transform: uppercase; font-size: 13px;">Traditional "Boost Post"</th>
+                     <th class="py-4 px-4 text-white fw-bold" style="background: rgba(255,255,255,0.08); text-transform: uppercase; font-size: 13px;">Vijayho Meta 360 Engine</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                     <td class="py-3 px-4 fw-bold">Targeting Engine</td>
+                     <td class="py-3 px-4" style="color: #888;">Generic location & simple interests</td>
+                     <td class="py-3 px-4 text-white" style="background: rgba(255,255,255,0.04); font-weight: 600;"><i class="fas fa-check-circle text-white me-2"></i>Multi-layer LAL 1%, broad AI & custom CRM lists</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                     <td class="py-3 px-4 fw-bold">Tracking & Attribution</td>
+                     <td class="py-3 px-4" style="color: #888;">Basic browser pixel (loses 40% data)</td>
+                     <td class="py-3 px-4 text-white" style="background: rgba(255,255,255,0.04); font-weight: 600;"><i class="fas fa-check-circle text-white me-2"></i>Full Cloud CAPI with 9.8/10 Event Match Quality</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                     <td class="py-3 px-4 fw-bold">Creative Formats</td>
+                     <td class="py-3 px-4" style="color: #888;">Static graphics & random images</td>
+                     <td class="py-3 px-4 text-white" style="background: rgba(255,255,255,0.04); font-weight: 600;"><i class="fas fa-check-circle text-white me-2"></i>High-hook 9:16 vertical video & automated catalogs</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                     <td class="py-3 px-4 fw-bold">Conversion Destination</td>
+                     <td class="py-3 px-4" style="color: #888;">Instagram profile or slow website</td>
+                     <td class="py-3 px-4 text-white" style="background: rgba(255,255,255,0.04); font-weight: 600;"><i class="fas fa-check-circle text-white me-2"></i>Instant WhatsApp automation or 0.8s Next.js portal</td>
+                  </tr>
+                  <tr>
+                     <td class="py-3 px-4 fw-bold">Commercial Outcome</td>
+                     <td class="py-3 px-4" style="color: #888;">Vanity likes & empty comments</td>
+                     <td class="py-3 px-4 text-white" style="background: rgba(255,255,255,0.04); font-weight: 600;"><i class="fas fa-check-circle text-white me-2"></i>Predictable revenue pipeline & verified B2B/B2C leads</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+
+   <!-- 6. FAQ ACCORDION -->
+   <div class="py-5" style="background: #0D0E12;">
+      <div class="container py-4">
+         <div class="text-center mb-50" style="margin-bottom: 45px !important;">
+            <span class="text-uppercase" style="font-size: 12px; letter-spacing: 2px; color: #777777; font-weight: 700;">FREQUENTLY ASKED QUESTIONS</span>
+            <h2 class="oit-title-revel text-white mt-1" style="font-size: 40px; font-weight: 800;">Meta 360 Campaign Insights</h2>
+         </div>
+
+         <div class="mx-auto" style="max-width: 850px;">
+            <div class="vj-faq-item p-4 mb-3" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; cursor: pointer;" onclick="toggleFaq(this)">
+               <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="text-white mb-0" style="font-size: 17px; font-weight: 600;">What is the minimum ad budget required to work with Vijayho on Meta?</h4>
+                  <i class="fas fa-chevron-down text-white" style="font-size: 14px; transition: transform 0.3s ease;"></i>
+               </div>
+               <div class="vj-faq-body mt-3 pt-3" style="border-top: 1px solid rgba(255,255,255,0.06); color: #999; font-size: 14px; line-height: 1.6; display: none;">
+                  We typically recommend a minimum monthly ad budget of ₹30,000 to ₹50,000 for local campaigns and ₹1,00,000+ for pan-India brand scaling. This provides sufficient conversion data for Meta's AI algorithm to exit the learning phase and optimize for the lowest cost per lead.
+               </div>
+            </div>
+
+            <div class="vj-faq-item p-4 mb-3" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; cursor: pointer;" onclick="toggleFaq(this)">
+               <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="text-white mb-0" style="font-size: 17px; font-weight: 600;">How does Conversions API (CAPI) solve tracking issues caused by iOS 14+?</h4>
+                  <i class="fas fa-chevron-down text-white" style="font-size: 14px; transition: transform 0.3s ease;"></i>
+               </div>
+               <div class="vj-faq-body mt-3 pt-3" style="border-top: 1px solid rgba(255,255,255,0.06); color: #999; font-size: 14px; line-height: 1.6; display: none;">
+                  Browser-based pixels run on the client device and are frequently blocked by Safari, iOS privacy settings, and ad-blockers. Our server-side CAPI pipeline sends purchase and lead events directly from your cloud server to Meta's servers, restoring 100% of lost conversion data and lowering your customer acquisition costs.
+               </div>
+            </div>
+
+            <div class="vj-faq-item p-4 mb-3" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; cursor: pointer;" onclick="toggleFaq(this)">
+               <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="text-white mb-0" style="font-size: 17px; font-weight: 600;">Can Meta Ads generate real B2B leads for Surat textile and diamond businesses?</h4>
+                  <i class="fas fa-chevron-down text-white" style="font-size: 14px; transition: transform 0.3s ease;"></i>
+               </div>
+               <div class="vj-faq-body mt-3 pt-3" style="border-top: 1px solid rgba(255,255,255,0.06); color: #999; font-size: 14px; line-height: 1.6; display: none;">
+                  Yes! We specialize in Surat's commercial ecosystem. By pairing high-authority video reels with direct WhatsApp Click-to-Chat automation and instant catalog downloads, we generate high-intent inquiries from retailers, distributors, and buyers across India daily.
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- 7. SUB-SERVICE QUICK NAVIGATION -->
+   <div class="py-5" style="background: #0A0C0F; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
+      <div class="container">
+         <div class="text-center mb-4">
+            <span class="text-uppercase" style="font-size: 11px; letter-spacing: 2px; color: #888888; font-weight: 700;">EXPLORE TECH SERVICES</span>
+            <h4 class="text-white mt-1 mb-0" style="font-size: 20px; font-weight: 700;">Engineered for High-Scale Digital Growth</h4>
+         </div>
+         <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="meta-360-dark.html" class="d-inline-flex align-items-center gap-2 px-4 py-2" style="border-radius: 30px; font-size: 13px; font-weight: 600; text-decoration: none; background: #FFFFFF; color: #000000; box-shadow: 0 4px 20px rgba(255,255,255,0.25);">
+               <i class="fab fa-meta text-dark"></i>
+               <span>Meta 360 Ads</span>
+            </a>
+            <a href="web-development-dark.html" class="d-inline-flex align-items-center gap-2 px-4 py-2" style="border-radius: 30px; font-size: 13px; font-weight: 600; text-decoration: none; background: rgba(255,255,255,0.04); color: #CCCCCC; border: 1px solid rgba(255,255,255,0.1);">
+               <i class="fas fa-code text-muted"></i>
+               <span>Web Development</span>
+            </a>
+            <a href="app-development-dark.html" class="d-inline-flex align-items-center gap-2 px-4 py-2" style="border-radius: 30px; font-size: 13px; font-weight: 600; text-decoration: none; background: rgba(255,255,255,0.04); color: #CCCCCC; border: 1px solid rgba(255,255,255,0.1);">
+               <i class="fas fa-mobile-alt text-muted"></i>
+               <span>Mobile Apps</span>
+            </a>
+            <a href="crm-erp-dark.html" class="d-inline-flex align-items-center gap-2 px-4 py-2" style="border-radius: 30px; font-size: 13px; font-weight: 600; text-decoration: none; background: rgba(255,255,255,0.04); color: #CCCCCC; border: 1px solid rgba(255,255,255,0.1);">
+               <i class="fas fa-network-wired text-muted"></i>
+               <span>CRM & ERP Automation</span>
+            </a>
+            <a href="seo-dark.html" class="d-inline-flex align-items-center gap-2 px-4 py-2" style="border-radius: 30px; font-size: 13px; font-weight: 600; text-decoration: none; background: rgba(255,255,255,0.04); color: #CCCCCC; border: 1px solid rgba(255,255,255,0.1);">
+               <i class="fas fa-chart-line text-muted"></i>
+               <span>Data-Driven SEO</span>
+            </a>
+            <a href="google-ads-dark.html" class="d-inline-flex align-items-center gap-2 px-4 py-2" style="border-radius: 30px; font-size: 13px; font-weight: 600; text-decoration: none; background: rgba(255,255,255,0.04); color: #CCCCCC; border: 1px solid rgba(255,255,255,0.1);">
+               <i class="fab fa-google text-muted"></i>
+               <span>Google Ads & PMax</span>
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <!-- 8. HIGH CONVERSION CTA BANNER -->
+   <div class="py-5" style="background: radial-gradient(circle at center, #1A1F26 0%, #0D0E12 100%);">
+      <div class="container py-4">
+         <div class="p-5 text-center position-relative overflow-hidden" style="background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%); border: 1px solid rgba(255,255,255,0.12); border-radius: 28px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+            <span class="d-inline-block px-3 py-1 mb-3 text-uppercase" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; font-size: 11px; letter-spacing: 2px; color: #CCCCCC;">SURAT'S PREMIER TECH POWERHOUSE</span>
+            <h2 class="text-white mb-3" style="font-size: 42px; font-weight: 800; letter-spacing: -0.5px;">Stop Guessing. <span style="background: linear-gradient(90deg, #FFFFFF, #999999); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Start Dominating Meta.</span></h2>
+            <p class="mx-auto mb-4" style="max-width: 650px; color: #AAAAAA; font-size: 16px; line-height: 1.6;">Schedule your free 30-minute Meta Ad Account & CAPI audit. We will identify conversion bottlenecks and deliver a clear scaling roadmap.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+               <a href="contact-v1-dark.html" class="d-inline-flex align-items-center gap-2 px-5 py-3" style="background: #FFFFFF; color: #000000; font-weight: 700; border-radius: 30px; text-decoration: none; font-size: 15px; box-shadow: 0 8px 30px rgba(255,255,255,0.25);">
+                  <span>Schedule Free Meta Audit</span>
+                  <i class="fas fa-arrow-right"></i>
+               </a>
+               <a href="https://wa.me/919999999999" target="_blank" class="d-inline-flex align-items-center gap-2 px-4 py-3" style="background: rgba(255,255,255,0.05); color: #FFFFFF; font-weight: 600; border: 1px solid rgba(255,255,255,0.15); border-radius: 30px; text-decoration: none; font-size: 15px;">
+                  <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                  <span>WhatsApp Strategy Chat</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</main>
+
 
                   <!-- footer area start -->
          <footer data-bg-color="#101216" style="border-top: 1px solid rgba(255, 255, 255, 0.1);">
@@ -506,6 +1066,71 @@
    <script src="assets/js/nice-select.js"></script>
    <script src="assets/js/script.js"></script>
 
+
+<script>
+   // 1. Interactive Ad Format Switcher
+   function switchAdFormat(format) {
+      document.querySelectorAll('.vj-ad-tab-btn').forEach(btn => btn.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+
+      document.getElementById('vjReelAdCard').style.display = 'none';
+      document.getElementById('vjCatalogAdCard').style.display = 'none';
+      document.getElementById('vjWhatsappAdCard').style.display = 'none';
+
+      if (format === 'reel') {
+         document.getElementById('vjReelAdCard').style.display = 'block';
+      } else if (format === 'catalog') {
+         document.getElementById('vjCatalogAdCard').style.display = 'block';
+      } else if (format === 'whatsapp') {
+         document.getElementById('vjWhatsappAdCard').style.display = 'block';
+      }
+   }
+
+   // 2. Interactive Likes Increment
+   let likes = 24800;
+   function incrementLikes() {
+      likes++;
+      document.getElementById('vjLikesCount').innerText = (likes / 1000).toFixed(1) + 'K';
+   }
+
+   // 3. Interactive ROAS Simulator Calculator
+   function calculateSimulator(budget) {
+      const b = parseInt(budget, 10);
+      document.getElementById('vjBudgetDisplay').innerText = b.toLocaleString('en-IN');
+
+      // Formula calculations
+      const reachMin = Math.round((b / 150) * 1000);
+      const reachMax = Math.round(reachMin * 1.35);
+      const reachStr = (reachMin / 1000000).toFixed(1) + 'M - ' + (reachMax / 1000000).toFixed(1) + 'M';
+      document.getElementById('vjSimReach').innerText = reachStr;
+
+      const leadsMin = Math.round(b / 340);
+      const leadsMax = Math.round(b / 290);
+      document.getElementById('vjSimLeads').innerText = leadsMin + ' - ' + leadsMax;
+
+      const cpa = Math.round(b / ((leadsMin + leadsMax) / 2));
+      document.getElementById('vjSimCpa').innerText = '₹' + cpa;
+
+      const rev = Math.round(b * 4.82);
+      document.getElementById('vjSimRevenue').innerText = '₹' + rev.toLocaleString('en-IN');
+   }
+
+   // 4. FAQ Toggle
+   function toggleFaq(el) {
+      const body = el.querySelector('.vj-faq-body');
+      const icon = el.querySelector('i.fa-chevron-down');
+      const isOpen = body.style.display === 'block';
+
+      // Close all
+      document.querySelectorAll('.vj-faq-body').forEach(b => b.style.display = 'none');
+      document.querySelectorAll('.vj-faq-item i.fa-chevron-down').forEach(i => i.style.transform = 'rotate(0deg)');
+
+      if (!isOpen) {
+         body.style.display = 'block';
+         icon.style.transform = 'rotate(180deg)';
+      }
+   }
+</script>
 </body>
 
 </html>
