@@ -191,244 +191,1199 @@
       <div id="smooth-content">
 
          <main>
-            <!-- breadcrumb area start -->            
-            <div class="blog-details-breadcrumb-area career-style breadcrumb-style-2 rotate-section p-relative pt-180 pb-100">    
-               <div class="container">
-                  <div class="blog-details-breadcrumb-badges badges-style-2 mb-20">
-                     <div>
-                        <span class="badge text-white" style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 6px 16px;">Home</span>
-                        <span class="text-white mx-2">&bull;</span>
-                        <span class="badge text-white" style="background: rgba(255,255,255,0.1); border-radius: 20px; padding: 6px 16px;">Technology Solutions</span>
-                     </div>
-                  </div>
-                  <h1 class="text-white font-weight-bold" style="font-size: 56px; line-height: 1.2;">Tech Services</h1>
-                  <p class="mt-20" style="font-size: 20px; color: rgba(255,255,255,0.8); max-width: 800px;">Comprehensive Digital & Technical Solutions for Scalable Business Growth</p>
-               </div>
-            </div>
-            <!-- breadcrumb area end -->
-            
-            <!-- details area start -->
-            <div class="service-details-area pb-115">              
+            <!-- 1. CINEMATIC HERO & BREADCRUMB (THE SONIC MEDIA STYLE) -->
+            <style>
+               .vj-tech-hero-area {
+                  background: #0D0D0D;
+                  position: relative;
+                  z-index: 1;
+                  padding-top: 190px;
+                  padding-bottom: 120px;
+                  overflow: hidden;
+               }
+               .vj-tech-hero-area::before {
+                  content: '';
+                  position: absolute;
+                  top: -150px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  width: 650px;
+                  height: 350px;
+                  background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+                  pointer-events: none;
+                  z-index: -1;
+               }
+               .vj-tech-breadcrumb {
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 12px;
+                  background: rgba(255, 255, 255, 0.04);
+                  border: 1px solid rgba(255, 255, 255, 0.12);
+                  padding: 8px 20px;
+                  border-radius: 30px;
+                  margin-bottom: 30px;
+               }
+               .vj-tech-breadcrumb a {
+                  color: rgba(255, 255, 255, 0.65);
+                  font-size: 13px;
+                  text-transform: uppercase;
+                  letter-spacing: 1.5px;
+                  font-weight: 600;
+                  text-decoration: none;
+                  transition: color 0.3s ease;
+               }
+               .vj-tech-breadcrumb a:hover {
+                  color: #FFFFFF;
+               }
+               .vj-tech-breadcrumb span {
+                  color: rgba(255, 255, 255, 0.3);
+                  font-size: 11px;
+               }
+               .vj-tech-hero-title {
+                  font-size: 82px;
+                  font-weight: 900;
+                  line-height: 1.05;
+                  letter-spacing: -1.5px;
+                  text-transform: uppercase;
+                  color: #FFFFFF;
+                  margin-bottom: 24px;
+               }
+               .vj-tech-hero-title span {
+                  color: #FFFFFF;
+                  text-shadow: 0 0 35px rgba(255, 255, 255, 0.45);
+               }
+               .vj-tech-hero-desc {
+                  font-size: 20px;
+                  line-height: 1.6;
+                  color: rgba(255, 255, 255, 0.72);
+                  max-width: 780px;
+                  margin: 0 auto 35px;
+                  font-weight: 400;
+               }
+               .vj-tech-stats-strip {
+                  display: inline-flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  gap: 30px;
+                  padding-top: 25px;
+                  border-top: 1px solid rgba(255, 255, 255, 0.1);
+               }
+               .vj-tech-stat-item {
+                  text-align: center;
+               }
+               .vj-tech-stat-num {
+                  font-size: 26px;
+                  font-weight: 800;
+                  color: #FFFFFF;
+                  display: block;
+                  line-height: 1.2;
+               }
+               .vj-tech-stat-label {
+                  font-size: 12px;
+                  letter-spacing: 1px;
+                  text-transform: uppercase;
+                  color: rgba(255, 255, 255, 0.6);
+                  font-weight: 600;
+               }
+               @media (max-width: 991px) {
+                  .vj-tech-hero-title {
+                     font-size: 46px;
+                  }
+                  .vj-tech-hero-desc {
+                     font-size: 16px;
+                  }
+               }
+            </style>
+
+            <div class="vj-tech-hero-area text-center">
                <div class="container">
                   <div class="row justify-content-center">
                      <div class="col-xl-10">
-                        <div class="service-details-content">
-                           <div class="postbox-dsc mb-55" style="background: rgba(255,255,255,0.03); padding: 40px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.08);">
-                              <p style="font-size: 18px; line-height: 1.8; color: rgba(255,255,255,0.85);">We build enterprise web apps, high-converting ad campaigns, native mobile applications, SEO engines, and integrated CRM/ERP systems engineered for maximum performance and conversion.</p>
-                           </div>
-
-                           <h3 class="text-white mb-35" style="font-size: 32px;">Key Capabilities & Features</h3>
-                           <div class="row mb-55">
-                              
-    <div class="col-lg-6 mb-20">
-      <ul class="career-details-list">
-        <li>
-          <span>
-            <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.5 0C11.9425 13.782 11.4838 14.331 0 15C11.485 15.669 11.9425 16.2195 12.5 30C13.0575 16.218 13.5162 15.669 25 15C13.515 14.331 13.0575 13.7805 12.5 0Z" fill="#FFFFFF" />
-            </svg>
-            Full-Stack Web & Custom Software
-          </span>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="col-lg-6 mb-20">
-      <ul class="career-details-list">
-        <li>
-          <span>
-            <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.5 0C11.9425 13.782 11.4838 14.331 0 15C11.485 15.669 11.9425 16.2195 12.5 30C13.0575 16.218 13.5162 15.669 25 15C13.515 14.331 13.0575 13.7805 12.5 0Z" fill="#FFFFFF" />
-            </svg>
-            Meta 360 & Google Performance Ads
-          </span>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="col-lg-6 mb-20">
-      <ul class="career-details-list">
-        <li>
-          <span>
-            <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.5 0C11.9425 13.782 11.4838 14.331 0 15C11.485 15.669 11.9425 16.2195 12.5 30C13.0575 16.218 13.5162 15.669 25 15C13.515 14.331 13.0575 13.7805 12.5 0Z" fill="#FFFFFF" />
-            </svg>
-            Data-Driven SEO & Content Strategy
-          </span>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="col-lg-6 mb-20">
-      <ul class="career-details-list">
-        <li>
-          <span>
-            <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.5 0C11.9425 13.782 11.4838 14.331 0 15C11.485 15.669 11.9425 16.2195 12.5 30C13.0575 16.218 13.5162 15.669 25 15C13.515 14.331 13.0575 13.7805 12.5 0Z" fill="#FFFFFF" />
-            </svg>
-            iOS & Android Mobile App Engineering
-          </span>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="col-lg-6 mb-20">
-      <ul class="career-details-list">
-        <li>
-          <span>
-            <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.5 0C11.9425 13.782 11.4838 14.331 0 15C11.485 15.669 11.9425 16.2195 12.5 30C13.0575 16.218 13.5162 15.669 25 15C13.515 14.331 13.0575 13.7805 12.5 0Z" fill="#FFFFFF" />
-            </svg>
-            Enterprise CRM & ERP Integrations
-          </span>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="col-lg-6 mb-20">
-      <ul class="career-details-list">
-        <li>
-          <span>
-            <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12.5 0C11.9425 13.782 11.4838 14.331 0 15C11.485 15.669 11.9425 16.2195 12.5 30C13.0575 16.218 13.5162 15.669 25 15C13.515 14.331 13.0575 13.7805 12.5 0Z" fill="#FFFFFF" />
-            </svg>
-            24/7 Technical Maintenance & Support
-          </span>
-        </li>
-      </ul>
-    </div>
-  
-                           </div>
-
-                           <h3 class="text-white mb-35" style="font-size: 32px;">Our Process Workflow</h3>
-                           <div class="row mb-55">
-                              
-    <div class="col-xxl-3 col-xl-4 col-md-6">
-      <div class="dg-step-item p-relative mb-35" style="border: 1px solid rgba(255,255,255,0.1); padding: 30px 25px; border-radius: 12px; background: rgba(255,255,255,0.02);">
-        <h4 class="dg-step-big-text" style="color: rgba(255,255,255,0.08);">01</h4>
-        <span style="color: rgba(255,255,255,0.6); font-size: 14px;">Step - 01</span>
-        <h4 class="dg-step-title text-white mt-10 mb-15">Discovery & Audit</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 15px; margin-bottom: 0;">Analyzing your current tech stack, performance bottlenecks, and market opportunities.</p>
-      </div>
-    </div>
-  
-    <div class="col-xxl-3 col-xl-4 col-md-6">
-      <div class="dg-step-item p-relative mb-35" style="border: 1px solid rgba(255,255,255,0.1); padding: 30px 25px; border-radius: 12px; background: rgba(255,255,255,0.02);">
-        <h4 class="dg-step-big-text" style="color: rgba(255,255,255,0.08);">02</h4>
-        <span style="color: rgba(255,255,255,0.6); font-size: 14px;">Step - 02</span>
-        <h4 class="dg-step-title text-white mt-10 mb-15">Architecture & Strategy</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 15px; margin-bottom: 0;">Designing custom technical solutions tailored to your revenue goals.</p>
-      </div>
-    </div>
-  
-    <div class="col-xxl-3 col-xl-4 col-md-6">
-      <div class="dg-step-item p-relative mb-35" style="border: 1px solid rgba(255,255,255,0.1); padding: 30px 25px; border-radius: 12px; background: rgba(255,255,255,0.02);">
-        <h4 class="dg-step-big-text" style="color: rgba(255,255,255,0.08);">03</h4>
-        <span style="color: rgba(255,255,255,0.6); font-size: 14px;">Step - 03</span>
-        <h4 class="dg-step-title text-white mt-10 mb-15">Development & Testing</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 15px; margin-bottom: 0;">Building secure, scalable code with rigorous quality assurance testing.</p>
-      </div>
-    </div>
-  
-    <div class="col-xxl-3 col-xl-4 col-md-6">
-      <div class="dg-step-item p-relative mb-35" style="border: 1px solid rgba(255,255,255,0.1); padding: 30px 25px; border-radius: 12px; background: rgba(255,255,255,0.02);">
-        <h4 class="dg-step-big-text" style="color: rgba(255,255,255,0.08);">04</h4>
-        <span style="color: rgba(255,255,255,0.6); font-size: 14px;">Step - 04</span>
-        <h4 class="dg-step-title text-white mt-10 mb-15">Deployment & Growth</h4>
-        <p style="color: rgba(255,255,255,0.7); font-size: 15px; margin-bottom: 0;">Launching applications and continuously optimizing performance for scale.</p>
-      </div>
-    </div>
-  
-                           </div>
-
-                           
-    <div class="row mt-50">
-      <div class="col-12 text-center mb-30">
-        <h3 class="text-white">Explore Tech Services Sub-Services</h3>
-      </div>
-      
-        <div class="col-md-4 col-sm-6 mb-20">
-          <a href="meta-360-dark.html" class="d-block p-4 text-center text-white text-decoration-none" style="background: rgba(255,255,255,0.05); border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.3s ease;">
-             <h5 class="m-0 text-white">Meta 360 &rarr;</h5>
-          </a>
-        </div>
-      
-        <div class="col-md-4 col-sm-6 mb-20">
-          <a href="google-ads-dark.html" class="d-block p-4 text-center text-white text-decoration-none" style="background: rgba(255,255,255,0.05); border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.3s ease;">
-             <h5 class="m-0 text-white">Google Ads &rarr;</h5>
-          </a>
-        </div>
-      
-        <div class="col-md-4 col-sm-6 mb-20">
-          <a href="seo-dark.html" class="d-block p-4 text-center text-white text-decoration-none" style="background: rgba(255,255,255,0.05); border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.3s ease;">
-             <h5 class="m-0 text-white">SEO Optimization &rarr;</h5>
-          </a>
-        </div>
-      
-        <div class="col-md-4 col-sm-6 mb-20">
-          <a href="web-development-dark.html" class="d-block p-4 text-center text-white text-decoration-none" style="background: rgba(255,255,255,0.05); border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.3s ease;">
-             <h5 class="m-0 text-white">Web Development &rarr;</h5>
-          </a>
-        </div>
-      
-        <div class="col-md-4 col-sm-6 mb-20">
-          <a href="app-development-dark.html" class="d-block p-4 text-center text-white text-decoration-none" style="background: rgba(255,255,255,0.05); border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.3s ease;">
-             <h5 class="m-0 text-white">App Development &rarr;</h5>
-          </a>
-        </div>
-      
-        <div class="col-md-4 col-sm-6 mb-20">
-          <a href="crm-erp-dark.html" class="d-block p-4 text-center text-white text-decoration-none" style="background: rgba(255,255,255,0.05); border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); transition: all 0.3s ease;">
-             <h5 class="m-0 text-white">CRM / ERP Solutions &rarr;</h5>
-          </a>
-        </div>
-      
-    </div>
-  
-
+                        <div class="vj-tech-breadcrumb fade-anim" data-delay=".2" data-fade-from="bottom">
+                           <a href="index-5-dark.html">HOME</a>
+                           <span>&bull;</span>
+                           <a href="tech-services-dark.html" style="color: #fff;">TECH SERVICES</a>
                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div> 
-            <!-- details area end -->
-
-            <!-- contact area start -->
-            <div class="dg-contact-area z-index-1 p-relative pt-100 pb-100" data-bg-color="#101216">
-               <div class="container">
-                  <div class="row align-items-center">
-                     <div class="col-xl-6 mb-40">
-                        <div class="dg-contact-left oit-section-title-box">
-                           <h3 class="oit-section-title text-white mb-30" style="font-size: 42px;">Ready to Scale Your Business with Tech Services?</h3>
-                           <p style="color: rgba(255,255,255,0.7); font-size: 17px;" class="mb-40">Get in touch with our team today for a custom strategy session and tailored proposal.</p>
-                           <a class="oit-btn-border btn-blur-bg d-inline-flex align-items-center justify-content-between" href="contact-v1-dark.html" style="padding: 15px 35px;">
-                              <span class="text-white"><b>SCHEDULE A STRATEGY CALL</b></span>
-                           </a>
-                        </div>
-                     </div>
-                     <div class="col-xl-6 mb-40">
-                        <div class="p-4" style="background: rgba(255,255,255,0.03); border-radius: 16px; border: 1px solid rgba(255,255,255,0.08);">
-                           <form action="#">
-                              <div class="mb-20">
-                                 <label class="text-white mb-10">Your Name *</label>
-                                 <input type="text" class="form-control" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 12px 18px;" placeholder="John Doe">
-                              </div>
-                              <div class="mb-20">
-                                 <label class="text-white mb-10">Email Address *</label>
-                                 <input type="email" class="form-control" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 12px 18px;" placeholder="john@example.com">
-                              </div>
-                              <div class="mb-25">
-                                 <label class="text-white mb-10">Message / Project Details</label>
-                                 <textarea class="form-control" rows="4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: #fff; padding: 12px 18px;" placeholder="Tell us about your project goals..."></textarea>
-                              </div>
-                              <button type="submit" class="w-100 btn btn-primary py-3" style="background: #fff; color: #000; border: none; font-weight: 700; border-radius: 8px;">Submit Inquiry</button>
-                           </form>
+                        <h1 class="vj-tech-hero-title oit-title-revel">
+                           OUR <span>SERVICES</span>
+                        </h1>
+                        <p class="vj-tech-hero-desc fade-anim" data-delay=".3" data-fade-from="bottom">
+                           Six specialized engineering disciplines. One unified powerhouse. Built to scale, automate, and dominate every corner of your digital ecosystem.
+                        </p>
+                        <div class="vj-tech-stats-strip fade-anim" data-delay=".4" data-fade-from="bottom">
+                           <div class="vj-tech-stat-item">
+                              <span class="vj-tech-stat-num">200+</span>
+                              <span class="vj-tech-stat-label">Web & App Deployments</span>
+                           </div>
+                           <div class="vj-tech-stat-item">
+                              <span class="vj-tech-stat-num">99.9%</span>
+                              <span class="vj-tech-stat-label">Cloud Uptime & SLA</span>
+                           </div>
+                           <div class="vj-tech-stat-item">
+                              <span class="vj-tech-stat-num">500+</span>
+                              <span class="vj-tech-stat-label">Scaled Funnels</span>
+                           </div>
+                           <div class="vj-tech-stat-item">
+                              <span class="vj-tech-stat-num">5+ Yrs</span>
+                              <span class="vj-tech-stat-label">Engineering Mastery</span>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-            <!-- contact area end -->
+
+
+            <!-- 2. "WHO WE ARE" & INTERACTIVE CLIENT INQUIRY CHAT BUBBLES (IMAGE 2 SURAT HERO STYLE) -->
+            <style>
+               .vj-surat-hero-area {
+                  background: #101216;
+                  position: relative;
+                  z-index: 1;
+                  padding: 120px 0;
+                  overflow: hidden;
+                  border-top: 1px solid rgba(255, 255, 255, 0.08);
+                  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+               }
+               .vj-surat-eyebrow {
+                  font-size: 13.5px;
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #999999;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 10px;
+                  margin-bottom: 18px;
+               }
+               .vj-surat-eyebrow::before {
+                  content: '';
+                  width: 24px;
+                  height: 2px;
+                  background: #FFFFFF;
+               }
+               .vj-surat-title {
+                  font-size: 52px;
+                  font-weight: 900;
+                  line-height: 1.15;
+                  color: #FFFFFF;
+                  margin-bottom: 20px;
+                  letter-spacing: -0.5px;
+               }
+               .vj-surat-title .vj-city {
+                  display: block;
+                  color: #FFFFFF;
+                  text-decoration: underline;
+                  text-decoration-color: rgba(255, 255, 255, 0.4);
+                  text-underline-offset: 8px;
+               }
+               .vj-surat-hashtags {
+                  font-size: 16px;
+                  font-weight: 700;
+                  color: rgba(255, 255, 255, 0.85);
+                  letter-spacing: 0.5px;
+                  margin-bottom: 24px;
+               }
+               .vj-surat-desc {
+                  font-size: 15.5px;
+                  line-height: 1.8;
+                  color: rgba(255, 255, 255, 0.7);
+                  margin-bottom: 35px;
+                  max-width: 520px;
+               }
+               .vj-surat-partners {
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 16px;
+                  margin-bottom: 35px;
+               }
+               .vj-surat-partner-box {
+                  background: rgba(255, 255, 255, 0.04);
+                  border: 1px solid rgba(255, 255, 255, 0.12);
+                  border-radius: 14px;
+                  padding: 12px 22px;
+                  display: flex;
+                  align-items: center;
+                  gap: 12px;
+                  backdrop-filter: blur(8px);
+                  transition: transform 0.3s ease, border-color 0.3s ease;
+               }
+               .vj-surat-partner-box:hover {
+                  transform: translateY(-3px);
+                  border-color: rgba(255, 255, 255, 0.35);
+               }
+               .vj-surat-btn {
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 12px;
+                  background: #FFFFFF;
+                  color: #000000;
+                  font-size: 15px;
+                  font-weight: 700;
+                  padding: 16px 36px;
+                  border-radius: 40px;
+                  text-decoration: none;
+                  transition: all 0.3s ease;
+                  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+               }
+               .vj-surat-btn:hover {
+                  background: rgba(255, 255, 255, 0.9);
+                  color: #000000;
+                  transform: translateY(-3px);
+                  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.25);
+               }
+
+               /* Interactive Chat Inquiries Canvas */
+               .vj-chat-inquiry-box {
+                  position: relative;
+                  background: rgba(255, 255, 255, 0.02);
+                  border: 1px solid rgba(255, 255, 255, 0.08);
+                  border-radius: 28px;
+                  padding: 40px 32px;
+                  min-height: 520px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  backdrop-filter: blur(10px);
+                  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6);
+               }
+               .vj-chat-watermark-1 {
+                  position: absolute;
+                  top: 20px;
+                  right: 25px;
+                  font-size: 12px;
+                  letter-spacing: 1px;
+                  color: rgba(255, 255, 255, 0.28);
+                  text-transform: uppercase;
+                  font-weight: 700;
+                  user-select: none;
+               }
+               .vj-chat-watermark-2 {
+                  position: absolute;
+                  bottom: 20px;
+                  left: 25px;
+                  font-size: 12px;
+                  letter-spacing: 1px;
+                  color: rgba(255, 255, 255, 0.28);
+                  text-transform: uppercase;
+                  font-weight: 700;
+                  user-select: none;
+               }
+               .vj-chat-bubble {
+                  background: rgba(255, 255, 255, 0.07);
+                  border: 1px solid rgba(255, 255, 255, 0.18);
+                  border-radius: 20px;
+                  padding: 12px 20px;
+                  margin-bottom: 14px;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 14px;
+                  backdrop-filter: blur(12px);
+                  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+                  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+                  max-width: 92%;
+                  cursor: pointer;
+               }
+               .vj-chat-bubble:hover {
+                  transform: scale(1.03) translateX(6px);
+                  background: rgba(255, 255, 255, 0.12);
+                  border-color: rgba(255, 255, 255, 0.45);
+               }
+               .vj-chat-bubble.bubble-right {
+                  align-self: flex-end;
+                  border-bottom-right-radius: 4px;
+               }
+               .vj-chat-bubble.bubble-left {
+                  align-self: flex-start;
+                  border-bottom-left-radius: 4px;
+               }
+               .vj-bubble-icon {
+                  width: 38px;
+                  height: 38px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 16px;
+                  flex-shrink: 0;
+                  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+               }
+               .vj-bubble-text {
+                  font-size: 14px;
+                  color: #FFFFFF;
+                  font-weight: 600;
+                  line-height: 1.4;
+               }
+               .vj-bubble-text small {
+                  display: block;
+                  font-size: 11px;
+                  font-weight: 400;
+                  color: rgba(255, 255, 255, 0.6);
+                  margin-top: 2px;
+               }
+               @media (max-width: 991px) {
+                  .vj-surat-title {
+                     font-size: 38px;
+                  }
+                  .vj-chat-inquiry-box {
+                     padding: 24px 16px;
+                     min-height: auto;
+                  }
+                  .vj-bubble-text {
+                     font-size: 13px;
+                  }
+               }
+            </style>
+
+            <div class="vj-surat-hero-area">
+               <div class="container">
+                  <div class="row align-items-center">
+                     <!-- Left Branding Column -->
+                     <div class="col-lg-6 mb-50 mb-lg-0">
+                        <span class="vj-surat-eyebrow fade-anim" data-delay=".2" data-fade-from="bottom">WHO WE ARE</span>
+                        <h2 class="vj-surat-title oit-title-revel">
+                           BEST TECH & DIGITAL GROWTH POWERHOUSE
+                           <span class="vj-city">IN SURAT</span>
+                        </h2>
+                        <div class="vj-surat-hashtags fade-anim" data-delay=".3" data-fade-from="bottom">
+                           #KaroMannKi &bull; #MaaroChhalang &bull; Ideas &bull; Leads &bull; Growth
+                        </div>
+                        <p class="vj-surat-desc fade-anim" data-delay=".35" data-fade-from="bottom">
+                           From custom web platforms and high-retention mobile apps to enterprise automation and algorithmic advertising funnels — Vijayho bridges the gap between audacious ideas and precision tech execution. We solve real growth challenges for scaling businesses.
+                        </p>
+                        
+                        <!-- Official Partner Badges -->
+                        <div class="vj-surat-partners fade-anim" data-delay=".4" data-fade-from="bottom">
+                           <!-- Meta Partner -->
+                           <div class="vj-surat-partner-box">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="#0081FB">
+                                 <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/>
+                              </svg>
+                              <div>
+                                 <strong style="color: #fff; font-size: 14px; display: block; line-height: 1.1;">Meta</strong>
+                                 <span style="color: rgba(255,255,255,0.6); font-size: 11px;">Business Partner</span>
+                              </div>
+                           </div>
+
+                           <!-- Google Partner -->
+                           <div class="vj-surat-partner-box">
+                              <div style="width: 12px; height: 32px; border-radius: 4px; background: linear-gradient(180deg, #4285F4 0%, #34A853 45%, #FBBC05 75%, #EA4335 100%);"></div>
+                              <div>
+                                 <strong style="color: #fff; font-size: 14px; display: block; line-height: 1.1;">Google</strong>
+                                 <span style="color: rgba(255,255,255,0.6); font-size: 11px;">Certified Partner</span>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="fade-anim" data-delay=".45" data-fade-from="bottom">
+                           <a href="#contact" class="vj-surat-btn">
+                              <span>Let’s Build Together</span>
+                              <i class="fas fa-arrow-right"></i>
+                           </a>
+                        </div>
+                     </div>
+
+                     <!-- Right Interactive Client Chat Bubbles Column -->
+                     <div class="col-lg-6">
+                        <div class="vj-chat-inquiry-box fade-anim" data-delay=".3" data-fade-from="right" data-fade-offset="40">
+                           <div class="vj-chat-watermark-1">Same Questions &bull; Bigger Possibilities</div>
+                           <div class="vj-chat-watermark-2">We Make It Happen &bull; Surat & Global</div>
+
+                           <!-- Bubble 1: Vijayho Lead In -->
+                           <div class="vj-chat-bubble bubble-left">
+                              <div class="vj-bubble-icon" style="background: #FFFFFF; color: #000; font-weight: 900;">V</div>
+                              <div class="vj-bubble-text">
+                                 “Hello Vijayho! Kya aap end-to-end tech, custom software & digital growth sambhalte ho?”
+                                 <small>Vijayho Client Success Desk &bull; Just now</small>
+                              </div>
+                           </div>
+
+                           <!-- Bubble 2: Custom Website & E-commerce -->
+                           <div class="vj-chat-bubble bubble-right">
+                              <div class="vj-bubble-icon" style="background: rgba(255, 255, 255, 0.15); color: #fff;">
+                                 <i class="fas fa-laptop-code"></i>
+                              </div>
+                              <div class="vj-bubble-text">
+                                 “Mujhe ultra-fast custom website aur automated online payment gateway chahiye...”
+                                 <small>E-Commerce Founder &bull; Web Development</small>
+                              </div>
+                           </div>
+
+                           <!-- Bubble 3: Meta B2B Lead Gen -->
+                           <div class="vj-chat-bubble bubble-left">
+                              <div class="vj-bubble-icon" style="background: #1877F2; color: #fff;">
+                                 <i class="fab fa-facebook-f"></i>
+                              </div>
+                              <div class="vj-bubble-text">
+                                 “Facebook aur Instagram se genuine B2B lead generation campaign chalana hai...”
+                                 <small>Surat Business Owner &bull; Meta 360 Ads</small>
+                              </div>
+                           </div>
+
+                           <!-- Bubble 4: Android & iOS Mobile App -->
+                           <div class="vj-chat-bubble bubble-right">
+                              <div class="vj-bubble-icon" style="background: rgba(255, 255, 255, 0.15); color: #fff;">
+                                 <i class="fas fa-mobile-alt"></i>
+                              </div>
+                              <div class="vj-bubble-text">
+                                 “Android & iOS mobile application banani hai with real-time tracking...”
+                                 <small>Startup Founder &bull; Mobile App Engineering</small>
+                              </div>
+                           </div>
+
+                           <!-- Bubble 5: Google Search & Local SEO -->
+                           <div class="vj-chat-bubble bubble-left">
+                              <div class="vj-bubble-icon" style="background: #EA4335; color: #fff;">
+                                 <i class="fab fa-google"></i>
+                              </div>
+                              <div class="vj-bubble-text">
+                                 “Google Search aur Google Business Profile pe Surat me #1 ranking laani hai...”
+                                 <small>Local Enterprise &bull; SEO & Maps Ranking</small>
+                              </div>
+                           </div>
+
+                           <!-- Bubble 6: WhatsApp API & CRM ERP -->
+                           <div class="vj-chat-bubble bubble-right">
+                              <div class="vj-bubble-icon" style="background: #25D366; color: #fff;">
+                                 <i class="fab fa-whatsapp"></i>
+                              </div>
+                              <div class="vj-bubble-text">
+                                 “WhatsApp Business API aur custom CRM workflow automate karwana hai...”
+                                 <small>Operations Head &bull; CRM / ERP Automation</small>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <!-- 3. INTERACTIVE 3D COVERFLOW SHOWCASE: SCROLL THROUGH WHAT WE DO (SCROLL-DRIVEN) -->
+            <style>
+               .vj-coverflow-area {
+                  background: #0D0D0D;
+                  position: relative;
+                  z-index: 1;
+                  min-height: 100vh;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  padding: 80px 0;
+                  overflow: hidden;
+               }
+               .vj-coverflow-eyebrow {
+                  font-size: 13.5px;
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #999999;
+                  display: inline-block;
+                  margin-bottom: 14px;
+               }
+               .vj-coverflow-title {
+                  font-size: 56px;
+                  font-weight: 900;
+                  letter-spacing: -1px;
+                  color: #FFFFFF;
+                  text-transform: uppercase;
+                  margin-bottom: 16px;
+               }
+               .vj-coverflow-title span {
+                  color: #FFFFFF;
+                  text-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+               }
+               .vj-coverflow-desc {
+                  font-size: 16px;
+                  line-height: 1.6;
+                  color: rgba(255, 255, 255, 0.65);
+                  max-width: 650px;
+                  margin: 0 auto 40px;
+               }
+
+               /* Swiper Slide Card Styling */
+               .vj-coverflow-slider {
+                  padding: 30px 10px 50px;
+                  overflow: visible !important;
+                  width: 100%;
+               }
+               .vj-cf-slide {
+                  width: 380px;
+                  border-radius: 26px;
+                  overflow: hidden;
+                  background: #14171E;
+                  border: 1px solid rgba(255, 255, 255, 0.12);
+                  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75);
+                  transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+               }
+               .vj-cf-card {
+                  position: relative;
+                  height: 480px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                  padding: 36px 30px;
+                  text-decoration: none;
+                  overflow: hidden;
+                  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(20, 23, 30, 0.95) 50%, #0F1218 100%);
+               }
+               
+               /* Tech Background Grid Pattern */
+               .vj-cf-card::before {
+                  content: '';
+                  position: absolute;
+                  inset: 0;
+                  background-image: 
+                     linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+                  background-size: 28px 28px;
+                  pointer-events: none;
+                  opacity: 0.8;
+               }
+
+               /* Ambient Top Watermark Icon */
+               .vj-cf-watermark-icon {
+                  position: absolute;
+                  top: 25px;
+                  right: 25px;
+                  font-size: 85px;
+                  color: rgba(255, 255, 255, 0.04);
+                  line-height: 1;
+                  pointer-events: none;
+                  transition: transform 0.5s ease, color 0.5s ease;
+               }
+               .vj-cf-slide:hover .vj-cf-watermark-icon,
+               .swiper-slide-active .vj-cf-watermark-icon {
+                  color: rgba(255, 255, 255, 0.08);
+                  transform: scale(1.1) rotate(-5deg);
+               }
+
+               .vj-cf-badge-row {
+                  position: relative;
+                  z-index: 2;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  margin-bottom: 20px;
+               }
+               .vj-cf-num {
+                  font-size: 12.5px;
+                  font-weight: 800;
+                  letter-spacing: 1.5px;
+                  color: #FFFFFF;
+                  background: rgba(255, 255, 255, 0.1);
+                  padding: 6px 14px;
+                  border-radius: 20px;
+                  border: 1px solid rgba(255, 255, 255, 0.2);
+                  backdrop-filter: blur(8px);
+               }
+               .vj-cf-tag {
+                  font-size: 11px;
+                  font-weight: 700;
+                  letter-spacing: 1.5px;
+                  text-transform: uppercase;
+                  color: rgba(255, 255, 255, 0.7);
+               }
+
+               .vj-cf-bottom {
+                  position: relative;
+                  z-index: 2;
+               }
+               .vj-cf-icon-bubble {
+                  width: 52px;
+                  height: 52px;
+                  border-radius: 16px;
+                  background: rgba(255, 255, 255, 0.06);
+                  border: 1px solid rgba(255, 255, 255, 0.18);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 22px;
+                  color: #FFFFFF;
+                  margin-bottom: 20px;
+                  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+                  transition: transform 0.3s ease, background 0.3s ease;
+               }
+               .vj-cf-card:hover .vj-cf-icon-bubble {
+                  transform: scale(1.1);
+                  background: #FFFFFF;
+                  color: #000000;
+               }
+               .vj-cf-title {
+                  font-size: 26px;
+                  font-weight: 800;
+                  color: #FFFFFF;
+                  margin-bottom: 12px;
+                  line-height: 1.25;
+                  transition: color 0.3s ease;
+               }
+               .vj-cf-desc {
+                  font-size: 14.5px;
+                  line-height: 1.65;
+                  color: rgba(255, 255, 255, 0.7);
+                  margin-bottom: 24px;
+               }
+               .vj-cf-link {
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 10px;
+                  font-size: 13px;
+                  font-weight: 700;
+                  letter-spacing: 1.2px;
+                  text-transform: uppercase;
+                  color: #FFFFFF;
+                  transition: gap 0.3s ease;
+               }
+               .vj-cf-card:hover .vj-cf-link {
+                  gap: 16px;
+                  color: #FFFFFF;
+               }
+               .swiper-slide-active .vj-cf-slide {
+                  border-color: rgba(255, 255, 255, 0.45);
+                  box-shadow: 0 35px 85px rgba(0, 0, 0, 0.95), 0 0 35px rgba(255, 255, 255, 0.15);
+               }
+
+               /* Scroll Hint Indicator */
+               .vj-scroll-hint {
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 10px;
+                  font-size: 12px;
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+                  color: rgba(255, 255, 255, 0.5);
+                  font-weight: 600;
+                  margin-top: 15px;
+               }
+               .vj-scroll-hint-bar {
+                  width: 40px;
+                  height: 2px;
+                  background: rgba(255, 255, 255, 0.2);
+                  position: relative;
+                  overflow: hidden;
+               }
+               .vj-scroll-hint-bar::after {
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  height: 100%;
+                  width: 50%;
+                  background: #FFFFFF;
+                  animation: vjScrollAnim 1.8s infinite ease-in-out;
+               }
+               @keyframes vjScrollAnim {
+                  0% { transform: translateX(-100%); }
+                  100% { transform: translateX(200%); }
+               }
+
+               @media (max-width: 991px) {
+                  .vj-coverflow-title {
+                     font-size: 38px;
+                  }
+                  .vj-cf-slide {
+                     width: 300px;
+                  }
+                  .vj-cf-card {
+                     height: 420px;
+                     padding: 26px 20px;
+                  }
+                  .vj-cf-title {
+                     font-size: 22px;
+                  }
+               }
+            </style>
+
+            <div class="vj-coverflow-area text-center" id="vjCoverflowSection">
+               <div class="container">
+                  <span class="vj-coverflow-eyebrow fade-anim" data-delay=".2" data-fade-from="bottom">INNOVATION IN MOTION</span>
+                  <h2 class="vj-coverflow-title oit-title-revel">
+                     SCROLL THROUGH <span>WHAT WE DO</span>
+                  </h2>
+                  <p class="vj-coverflow-desc fade-anim" data-delay=".3" data-fade-from="bottom">
+                     Every tech discipline. One unified agency. Engineered to conquer your digital challenges and drive compounded revenue.
+                  </p>
+               </div>
+
+               <!-- 3D Swiper Carousel (Scroll Controlled) -->
+               <div class="swiper-container vj-coverflow-slider">
+                  <div class="swiper-wrapper">
+
+                     <!-- Slide 1: Web Development -->
+                     <div class="swiper-slide vj-cf-slide">
+                        <a href="web-development-dark.html" class="vj-cf-card">
+                           <div class="vj-cf-watermark-icon"><i class="fas fa-code"></i></div>
+                           <div class="vj-cf-badge-row">
+                              <span class="vj-cf-num">01 &bull; WEB DEV</span>
+                              <span class="vj-cf-tag">FULL-STACK</span>
+                           </div>
+                           <div class="vj-cf-bottom text-start">
+                              <div class="vj-cf-icon-bubble"><i class="fas fa-laptop-code"></i></div>
+                              <h3 class="vj-cf-title">Custom Website & Web Portals</h3>
+                              <p class="vj-cf-desc">Next.js, React, Node.js, and headless CMS platforms optimized for blazing-fast speed and conversion.</p>
+                              <div class="vj-cf-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+                           </div>
+                        </a>
+                     </div>
+
+                     <!-- Slide 2: Mobile App Development -->
+                     <div class="swiper-slide vj-cf-slide">
+                        <a href="app-development-dark.html" class="vj-cf-card">
+                           <div class="vj-cf-watermark-icon"><i class="fas fa-mobile"></i></div>
+                           <div class="vj-cf-badge-row">
+                              <span class="vj-cf-num">02 &bull; APP DEV</span>
+                              <span class="vj-cf-tag">IOS & ANDROID</span>
+                           </div>
+                           <div class="vj-cf-bottom text-start">
+                              <div class="vj-cf-icon-bubble"><i class="fas fa-mobile-alt"></i></div>
+                              <h3 class="vj-cf-title">Native & Hybrid Mobile Apps</h3>
+                              <p class="vj-cf-desc">High-retention mobile applications engineered with Flutter and native frameworks with real-time sync.</p>
+                              <div class="vj-cf-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+                           </div>
+                        </a>
+                     </div>
+
+                     <!-- Slide 3: CRM & ERP Solutions -->
+                     <div class="swiper-slide vj-cf-slide">
+                        <a href="crm-erp-dark.html" class="vj-cf-card">
+                           <div class="vj-cf-watermark-icon"><i class="fas fa-network-wired"></i></div>
+                           <div class="vj-cf-badge-row">
+                              <span class="vj-cf-num">03 &bull; CRM & ERP</span>
+                              <span class="vj-cf-tag">AUTOMATION</span>
+                           </div>
+                           <div class="vj-cf-bottom text-start">
+                              <div class="vj-cf-icon-bubble"><i class="fas fa-tasks"></i></div>
+                              <h3 class="vj-cf-title">Enterprise Workflow Automation</h3>
+                              <p class="vj-cf-desc">Custom CRM dashboards, WhatsApp API bots, automated invoicing, and business management systems.</p>
+                              <div class="vj-cf-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+                           </div>
+                        </a>
+                     </div>
+
+                     <!-- Slide 4: SEO Optimization -->
+                     <div class="swiper-slide vj-cf-slide">
+                        <a href="seo-dark.html" class="vj-cf-card">
+                           <div class="vj-cf-watermark-icon"><i class="fas fa-search"></i></div>
+                           <div class="vj-cf-badge-row">
+                              <span class="vj-cf-num">04 &bull; SEO</span>
+                              <span class="vj-cf-tag">ORGANIC SEARCH</span>
+                           </div>
+                           <div class="vj-cf-bottom text-start">
+                              <div class="vj-cf-icon-bubble"><i class="fas fa-chart-line"></i></div>
+                              <h3 class="vj-cf-title">Technical SEO & Rank Domination</h3>
+                              <p class="vj-cf-desc">Local Surat search dominance and global keyword rankings backed by data audits and schema architecture.</p>
+                              <div class="vj-cf-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+                           </div>
+                        </a>
+                     </div>
+
+                     <!-- Slide 5: Meta 360 Ads -->
+                     <div class="swiper-slide vj-cf-slide">
+                        <a href="meta-360-dark.html" class="vj-cf-card">
+                           <div class="vj-cf-watermark-icon"><i class="fas fa-bullseye"></i></div>
+                           <div class="vj-cf-badge-row">
+                              <span class="vj-cf-num">05 &bull; META 360</span>
+                              <span class="vj-cf-tag">PAID SOCIAL</span>
+                           </div>
+                           <div class="vj-cf-bottom text-start">
+                              <div class="vj-cf-icon-bubble"><i class="fab fa-facebook-f"></i></div>
+                              <h3 class="vj-cf-title">High-ROAS Meta Ad Campaigns</h3>
+                              <p class="vj-cf-desc">Algorithmic Facebook & Instagram funnels, creative testing matrix, and high-converting lead campaigns.</p>
+                              <div class="vj-cf-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+                           </div>
+                        </a>
+                     </div>
+
+                     <!-- Slide 6: Google Ads & Performance Max -->
+                     <div class="swiper-slide vj-cf-slide">
+                        <a href="google-ads-dark.html" class="vj-cf-card">
+                           <div class="vj-cf-watermark-icon"><i class="fab fa-google"></i></div>
+                           <div class="vj-cf-badge-row">
+                              <span class="vj-cf-num">06 &bull; GOOGLE ADS</span>
+                              <span class="vj-cf-tag">SEARCH & P-MAX</span>
+                           </div>
+                           <div class="vj-cf-bottom text-start">
+                              <div class="vj-cf-icon-bubble"><i class="fas fa-bullhorn"></i></div>
+                              <h3 class="vj-cf-title">Google Performance Max & Search</h3>
+                              <p class="vj-cf-desc">Laser-targeted search ads, YouTube video campaigns, and high-intent customer acquisition funnels.</p>
+                              <div class="vj-cf-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+                           </div>
+                        </a>
+                     </div>
+
+                  </div>
+               </div>
+
+               <!-- Subtle Scroll Indicator -->
+               <div class="vj-scroll-hint">
+                  <div class="vj-scroll-hint-bar"></div>
+                  <span>Scroll Page To Navigate</span>
+                  <div class="vj-scroll-hint-bar"></div>
+               </div>
+            </div>
+
+            <!-- 4. "WHAT WE DO & EVERYTHING YOUR BRAND NEEDS TO GROW" (IMAGE 1 4-PILLAR STRUCTURE) -->
+            <style>
+               .vj-capabilities-area {
+                  background: #101216;
+                  position: relative;
+                  z-index: 1;
+                  padding: 120px 0;
+                  border-top: 1px solid rgba(255, 255, 255, 0.08);
+               }
+               .vj-cap-eyebrow {
+                  font-size: 13.5px;
+                  letter-spacing: 2px;
+                  text-transform: uppercase;
+                  font-weight: 600;
+                  color: #999999;
+                  display: inline-block;
+                  margin-bottom: 16px;
+               }
+               .vj-cap-main-title {
+                  font-size: 44px;
+                  font-weight: 800;
+                  line-height: 1.2;
+                  color: #FFFFFF;
+                  letter-spacing: -0.5px;
+               }
+               .vj-cap-main-desc {
+                  font-size: 16px;
+                  line-height: 1.8;
+                  color: rgba(255, 255, 255, 0.7);
+                  margin-bottom: 0;
+               }
+
+               /* 4 Detailed Cards */
+               .vj-cap-grid-header {
+                  margin-top: 70px;
+                  margin-bottom: 40px;
+               }
+               .vj-cap-card {
+                  background: rgba(255, 255, 255, 0.03);
+                  border: 1px solid rgba(255, 255, 255, 0.08);
+                  border-radius: 24px;
+                  padding: 38px 30px;
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+                  position: relative;
+                  overflow: hidden;
+               }
+               .vj-cap-card:hover {
+                  transform: translateY(-8px);
+                  background: rgba(255, 255, 255, 0.05);
+                  border-color: rgba(255, 255, 255, 0.3);
+                  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 255, 255, 0.06);
+               }
+               .vj-cap-card-top {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  margin-bottom: 24px;
+               }
+               .vj-cap-num {
+                  font-size: 28px;
+                  font-weight: 800;
+                  color: rgba(255, 255, 255, 0.35);
+                  line-height: 1;
+               }
+               .vj-cap-icon-box {
+                  width: 52px;
+                  height: 52px;
+                  border-radius: 16px;
+                  background: rgba(255, 255, 255, 0.06);
+                  border: 1px solid rgba(255, 255, 255, 0.15);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 22px;
+                  color: #FFFFFF;
+               }
+               .vj-cap-category {
+                  font-size: 11.5px;
+                  letter-spacing: 1.5px;
+                  text-transform: uppercase;
+                  color: rgba(255, 255, 255, 0.6);
+                  font-weight: 700;
+                  margin-bottom: 8px;
+                  display: block;
+               }
+               .vj-cap-title {
+                  font-size: 21px;
+                  font-weight: 700;
+                  color: #FFFFFF;
+                  margin-bottom: 18px;
+                  line-height: 1.35;
+               }
+               .vj-cap-list {
+                  list-style: none;
+                  padding: 0;
+                  margin: 0;
+                  flex-grow: 1;
+               }
+               .vj-cap-list li {
+                  font-size: 14px;
+                  color: rgba(255, 255, 255, 0.7);
+                  padding-left: 18px;
+                  position: relative;
+                  margin-bottom: 10px;
+                  line-height: 1.5;
+               }
+               .vj-cap-list li:last-child {
+                  margin-bottom: 0;
+               }
+               .vj-cap-list li::before {
+                  content: '•';
+                  position: absolute;
+                  left: 0;
+                  color: rgba(255, 255, 255, 0.4);
+                  font-size: 16px;
+                  line-height: 1;
+               }
+               @media (max-width: 991px) {
+                  .vj-cap-main-title {
+                     font-size: 32px;
+                  }
+               }
+            </style>
+
+            <div class="vj-capabilities-area">
+               <div class="container">
+                  <!-- Two-Column Statement Banner (Image 1 Top Style) -->
+                  <div class="row align-items-center mb-60">
+                     <div class="col-lg-5 mb-30 mb-lg-0">
+                        <span class="vj-cap-eyebrow fade-anim" data-delay=".2" data-fade-from="bottom">WHAT WE DO</span>
+                        <h2 class="vj-cap-main-title oit-title-revel">
+                           We Are a Tech-First Performance Engineering Agency.
+                        </h2>
+                     </div>
+                     <div class="col-lg-7">
+                        <p class="vj-cap-main-desc fade-anim" data-delay=".3" data-fade-from="bottom">
+                           We specialize in deep-dive understanding of your business architecture, crafting bespoke digital strategies followed by agile execution. From scalable Next.js cloud platforms and high-retention native mobile applications to enterprise CRM automations and algorithmic Meta/Google ads — our engineering ensures every project achieves your commercial goals with zero friction.
+                        </p>
+                     </div>
+                  </div>
+
+                  <!-- 4 Structured Pillar Cards (Image 1 Bottom Style) -->
+                  <div class="row vj-cap-grid-header align-items-end">
+                     <div class="col-lg-8">
+                        <span class="vj-cap-eyebrow fade-anim" data-delay=".2" data-fade-from="bottom">CORE DISCIPLINES</span>
+                        <h2 class="vj-cap-main-title oit-title-revel">
+                           Everything Your Brand Needs to Scale
+                        </h2>
+                     </div>
+                     <div class="col-lg-4 text-lg-end mt-20 mt-lg-0">
+                        <span style="font-size: 13.5px; color: rgba(255,255,255,0.6); letter-spacing: 1px; font-weight: 600;">
+                           Strategy &bull; Content &bull; Technology &bull; All Under One Roof
+                        </span>
+                     </div>
+                  </div>
+
+                  <div class="row g-4">
+                     <!-- Card 1: Web Development -->
+                     <div class="col-lg-3 col-md-6 fade-anim" data-delay=".2" data-fade-from="bottom">
+                        <div class="vj-cap-card">
+                           <div class="vj-cap-card-top">
+                              <span class="vj-cap-num">01</span>
+                              <div class="vj-cap-icon-box"><i class="fas fa-laptop-code"></i></div>
+                           </div>
+                           <span class="vj-cap-category">WEBSITE DESIGN & CLOUD</span>
+                           <h4 class="vj-cap-title">Web Development</h4>
+                           <ul class="vj-cap-list">
+                              <li>Mobile-First & Responsive Layouts</li>
+                              <li>Next.js, React & Node Full-Stack</li>
+                              <li>Security, SSL & Data Protection</li>
+                              <li>Database & Server Optimization</li>
+                              <li>Continuous Monitoring & Maintenance</li>
+                           </ul>
+                        </div>
+                     </div>
+
+                     <!-- Card 2: Mobile App Engineering -->
+                     <div class="col-lg-3 col-md-6 fade-anim" data-delay=".35" data-fade-from="bottom">
+                        <div class="vj-cap-card">
+                           <div class="vj-cap-card-top">
+                              <span class="vj-cap-num">02</span>
+                              <div class="vj-cap-icon-box"><i class="fas fa-mobile-alt"></i></div>
+                           </div>
+                           <span class="vj-cap-category">IOS & ANDROID ECOSYSTEM</span>
+                           <h4 class="vj-cap-title">App Development</h4>
+                           <ul class="vj-cap-list">
+                              <li>Native iOS Swift & Android Kotlin</li>
+                              <li>High-Velocity Flutter Hybrid Apps</li>
+                              <li>Real-Time Geo & Push Notifications</li>
+                              <li>Payment Gateway & API Integration</li>
+                              <li>App Store & Play Store Deployment</li>
+                           </ul>
+                        </div>
+                     </div>
+
+                     <!-- Card 3: CRM & ERP Automation -->
+                     <div class="col-lg-3 col-md-6 fade-anim" data-delay=".5" data-fade-from="bottom">
+                        <div class="vj-cap-card">
+                           <div class="vj-cap-card-top">
+                              <span class="vj-cap-num">03</span>
+                              <div class="vj-cap-icon-box"><i class="fas fa-network-wired"></i></div>
+                           </div>
+                           <span class="vj-cap-category">AUTOMATION & SYSTEMS</span>
+                           <h4 class="vj-cap-title">CRM / ERP Solutions</h4>
+                           <ul class="vj-cap-list">
+                              <li>Custom Lead Management Dashboards</li>
+                              <li>WhatsApp Business API Bots</li>
+                              <li>Multi-Branch Inventory & Accounts</li>
+                              <li>Automated Client Invoicing & SMS</li>
+                              <li>Webhook & Custom Third-Party Sync</li>
+                           </ul>
+                        </div>
+                     </div>
+
+                     <!-- Card 4: Performance Ads & SEO -->
+                     <div class="col-lg-3 col-md-6 fade-anim" data-delay=".65" data-fade-from="bottom">
+                        <div class="vj-cap-card">
+                           <div class="vj-cap-card-top">
+                              <span class="vj-cap-num">04</span>
+                              <div class="vj-cap-icon-box"><i class="fas fa-chart-line"></i></div>
+                           </div>
+                           <span class="vj-cap-category">PERFORMANCE & SEARCH</span>
+                           <h4 class="vj-cap-title">Performance Marketing</h4>
+                           <ul class="vj-cap-list">
+                              <li>High-ROAS Meta 360 Ad Funnels</li>
+                              <li>Google Search & Performance Max</li>
+                              <li>Technical SEO & Schema Optimization</li>
+                              <li>Surat Local Google Business Ranking</li>
+                              <li>Conversion Rate Optimization (CRO)</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <!-- 5. TECH DEVELOPMENT WORKFLOW PROCESS -->
+            <style>
+               .vj-process-area {
+                  background: #0D0D0D;
+                  position: relative;
+                  z-index: 1;
+                  padding: 120px 0;
+               }
+               .vj-process-card {
+                  background: rgba(255, 255, 255, 0.02);
+                  border: 1px solid rgba(255, 255, 255, 0.08);
+                  border-radius: 20px;
+                  padding: 34px 26px;
+                  position: relative;
+                  transition: all 0.3s ease;
+                  height: 100%;
+               }
+               .vj-process-card:hover {
+                  transform: translateY(-6px);
+                  border-color: rgba(255, 255, 255, 0.3);
+                  background: rgba(255, 255, 255, 0.04);
+               }
+               .vj-process-step-num {
+                  font-size: 54px;
+                  font-weight: 900;
+                  color: rgba(255, 255, 255, 0.08);
+                  position: absolute;
+                  top: 15px;
+                  right: 20px;
+                  line-height: 1;
+               }
+               .vj-process-tag {
+                  font-size: 11.5px;
+                  letter-spacing: 1.5px;
+                  text-transform: uppercase;
+                  color: rgba(255, 255, 255, 0.5);
+                  font-weight: 700;
+                  display: block;
+                  margin-bottom: 12px;
+               }
+               .vj-process-title {
+                  font-size: 20px;
+                  font-weight: 700;
+                  color: #FFFFFF;
+                  margin-bottom: 14px;
+               }
+               .vj-process-desc {
+                  font-size: 14px;
+                  line-height: 1.65;
+                  color: rgba(255, 255, 255, 0.65);
+                  margin-bottom: 0;
+               }
+            </style>
+
+            <div class="vj-process-area">
+               <div class="container">
+                  <div class="row justify-content-center text-center mb-60">
+                     <div class="col-xl-8">
+                        <span class="vj-cap-eyebrow fade-anim" data-delay=".2" data-fade-from="bottom">HOW WE ENGINEER SUCCESS</span>
+                        <h2 class="vj-cap-main-title oit-title-revel">Our Precision Tech Workflow</h2>
+                     </div>
+                  </div>
+
+                  <div class="row g-4">
+                     <div class="col-lg-3 col-md-6 fade-anim" data-delay=".2" data-fade-from="bottom">
+                        <div class="vj-process-card">
+                           <span class="vj-process-step-num">01</span>
+                           <span class="vj-process-tag">STEP 01</span>
+                           <h4 class="vj-process-title">Discovery & Tech Audit</h4>
+                           <p class="vj-process-desc">Comprehensive analysis of your current systems, market benchmarks, database performance, and conversion bottlenecks.</p>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-3 col-md-6 fade-anim" data-delay=".35" data-fade-from="bottom">
+                        <div class="vj-process-card">
+                           <span class="vj-process-step-num">02</span>
+                           <span class="vj-process-tag">STEP 02</span>
+                           <h4 class="vj-process-title">Architecture & UI/UX</h4>
+                           <p class="vj-process-desc">Interactive wireframes, user flow mapping, cloud architecture blueprinting, and scalable database schemas.</p>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-3 col-md-6 fade-anim" data-delay=".5" data-fade-from="bottom">
+                        <div class="vj-process-card">
+                           <span class="vj-process-step-num">03</span>
+                           <span class="vj-process-tag">STEP 03</span>
+                           <h4 class="vj-process-title">Agile Dev & QA</h4>
+                           <p class="vj-process-desc">Sprint-based modular coding, API integration, rigorous cross-device stress testing, and security audits.</p>
+                        </div>
+                     </div>
+
+                     <div class="col-lg-3 col-md-6 fade-anim" data-delay=".65" data-fade-from="bottom">
+                        <div class="vj-process-card">
+                           <span class="vj-process-step-num">04</span>
+                           <span class="vj-process-tag">STEP 04</span>
+                           <h4 class="vj-process-title">Deployment & Scale</h4>
+                           <p class="vj-process-desc">Zero-downtime cloud release, continuous monitoring, automated backups, and proactive technical support.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- 6. CONTACT CTA BANNER -->
+            <div class="dg-contact-area z-index-1 p-relative pt-90 pb-90" data-bg-color="#101216" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+               <div class="container">
+                  <div class="row align-items-center justify-content-between">
+                     <div class="col-lg-8 mb-30 mb-lg-0">
+                        <span style="font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #999999; font-weight: 700; display: block; margin-bottom: 12px;">READY TO BUILD?</span>
+                        <h3 class="text-white oit-title-revel" style="font-size: 42px; font-weight: 800; line-height: 1.2;">
+                           Have a Tech Project in Mind? <br> Let’s Scale It With Vijayho.
+                        </h3>
+                     </div>
+                     <div class="col-lg-4 text-lg-end">
+                        <a href="contact-v1-dark.html" class="vj-surat-btn">
+                           <span>Contact Our Team</span>
+                           <i class="fas fa-arrow-right"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
 
          </main>
 
@@ -548,6 +1503,67 @@
    <script src="assets/js/ordain-it.js"></script>
    <script src="assets/js/nice-select.js"></script>
    <script src="assets/js/script.js"></script>
+
+
+   <!-- Swiper 3D Coverflow Init Script (Page Scroll Driven) -->
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+         if (typeof Swiper === 'undefined') return;
+
+         // Initialize Swiper with smooth coverflow & mousewheel
+         const vjSwiper = new Swiper('.vj-coverflow-slider', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            initialSlide: 0,
+            speed: 800,
+            mousewheel: {
+               forceToAxis: true,
+               releaseOnEdges: true,
+               sensitivity: 1,
+            },
+            coverflowEffect: {
+               rotate: 0,
+               stretch: 0,
+               depth: 130,
+               modifier: 1.4,
+               slideShadows: false,
+            },
+            breakpoints: {
+               320: { slidesPerView: 1.15, spaceBetween: 20 },
+               768: { slidesPerView: 2, spaceBetween: 30 },
+               1200: { slidesPerView: 3, spaceBetween: 40 }
+            }
+         });
+
+         // Connect Page Scroll to Horizontal Slides using GSAP ScrollTrigger
+         if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+            const section = document.getElementById('vjCoverflowSection');
+            if (section) {
+               // Only pin on larger screens where horizontal scrolling feels natural
+               ScrollTrigger.matchMedia({
+                  "(min-width: 992px)": function () {
+                     ScrollTrigger.create({
+                        trigger: section,
+                        start: "top top",
+                        end: "+=1800",
+                        pin: true,
+                        scrub: 1,
+                        onUpdate: function (self) {
+                           const total = vjSwiper.slides.length - 1;
+                           const targetIndex = Math.min(total, Math.max(0, Math.round(self.progress * total)));
+                           if (vjSwiper.activeIndex !== targetIndex) {
+                              vjSwiper.slideTo(targetIndex, 600);
+                           }
+                        }
+                     });
+                  }
+               });
+            }
+         }
+      });
+   </script>
 
 </body>
 
