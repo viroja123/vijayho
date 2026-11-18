@@ -190,307 +190,199 @@
    <div id="smooth-wrapper">
       <div id="smooth-content">
 
-         <main>
+         
+<main>
+   <style>
+      @keyframes appFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+      @keyframes appPulse { 0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7); } 70% { transform: scale(1); box-shadow: 0 0 0 12px rgba(56, 189, 248, 0); } 100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(56, 189, 248, 0); } }
+      .vj-app-partner { animation: appFloat 4.5s ease-in-out infinite; display: inline-flex; align-items: center; gap: 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.15); padding: 12px 26px; border-radius: 50px; }
+      .vj-app-radar { width: 10px; height: 10px; background: #38BDF8; border-radius: 50%; display: inline-block; animation: appPulse 2s infinite; }
+      .vj-app-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 18px; padding: 22px 14px; min-height: 125px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; transition: all 0.3s ease; }
+      .vj-app-card:hover { transform: translateY(-5px); border-color: rgba(56,189,248,0.4); background: rgba(255,255,255,0.04); }
+      .vj-app-tab-btn { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); color: #AAAAAA; border-radius: 20px; padding: 8px 18px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
+      .vj-app-tab-btn.active { background: #FFFFFF; color: #000000; border-color: #FFFFFF; box-shadow: 0 4px 15px rgba(255,255,255,0.25); }
+      .vj-slider { -webkit-appearance: none; width: 100%; height: 8px; border-radius: 4px; background: rgba(255,255,255,0.15); outline: none; }
+      .vj-slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 26px; height: 26px; border-radius: 50%; background: #38BDF8; cursor: pointer; box-shadow: 0 0 15px rgba(56,189,248,0.8); }
+   </style>
 
-      <!-- HERO & BREADCRUMB -->
-      <section class="p-relative pt-180 pb-90" style="background: radial-gradient(circle at 50% 10%, #171922 0%, #0A0C0F 100%);">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-7">
-                  <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px;">
-                     <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #38BDF8; box-shadow: 0 0 10px #38BDF8;"></span>
-                     <span style="font-size: 12px; font-weight: 600; color: #CCCCCC; letter-spacing: 0.5px;">FLUTTER 3.24 & NATIVE IOS / ANDROID</span>
-                  </div>
-                  <h1 class="text-white mb-3" style="font-size: 52px; font-weight: 800; line-height: 1.15; letter-spacing: -1px;">
-                     Native & Hybrid <br>
-                     <span style="background: linear-gradient(90deg, #FFFFFF 0%, #888888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Mobile Applications</span>
-                  </h1>
-                  <p style="color: #999999; font-size: 17px; line-height: 1.7; max-width: 600px;">
-                     We engineer 60fps high-retention mobile applications for iOS and Android. Built with Flutter and native Swift / Kotlin, featuring offline-first storage and biometric security.
-                  </p>
-                  <div class="d-flex flex-wrap gap-4 mt-4 pt-2">
-                     <div>
-                        <div class="text-white" style="font-size: 32px; font-weight: 800; line-height: 1;">4.9 &starf;</div>
-                        <div style="font-size: 12px; color: #777777; text-transform: uppercase; margin-top: 4px;">Average Store Rating</div>
-                     </div>
-                     <div style="width: 1px; height: 40px; background: rgba(255,255,255,0.1);"></div>
-                     <div>
-                        <div class="text-white" style="font-size: 32px; font-weight: 800; line-height: 1;">99.98%</div>
-                        <div style="font-size: 12px; color: #777777; text-transform: uppercase; margin-top: 4px;">Crash-Free Sessions</div>
-                     </div>
-                     <div style="width: 1px; height: 40px; background: rgba(255,255,255,0.1);"></div>
-                     <div>
-                        <div class="text-white" style="font-size: 32px; font-weight: 800; line-height: 1;">1M+</div>
-                        <div style="font-size: 12px; color: #777777; text-transform: uppercase; margin-top: 4px;">Total App Installs</div>
-                     </div>
-                  </div>
+   <!-- HERO -->
+   <div class="text-center position-relative" style="background: radial-gradient(circle at 50% 15%, #151822 0%, #0D0D0D 80%); padding-top: 190px; padding-bottom: 120px; overflow: hidden;">
+      <div class="container position-relative" style="z-index: 2;">
+         <div class="d-inline-flex align-items-center gap-2 mb-4 px-3 py-1 fade-anim" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 30px;">
+            <a href="index-5-dark.html" style="color: #AAA; font-size: 12px; text-decoration: none;">Home</a>
+            <span style="color: #666; font-size: 11px;">/</span>
+            <a href="tech-services-dark.html" style="color: #AAA; font-size: 12px; text-decoration: none;">Tech Services</a>
+            <span style="color: #666; font-size: 11px;">/</span>
+            <span style="color: #FFF; font-size: 12px; font-weight: 600;">Mobile App Development</span>
+         </div>
+
+         <div class="mb-4 fade-anim" data-delay="0.1">
+            <div class="vj-app-partner">
+               <i class="fab fa-apple" style="font-size: 22px; color: #FFF;"></i>
+               <i class="fab fa-android" style="font-size: 20px; color: #38BDF8;"></i>
+               <div class="text-start">
+                  <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: #888; font-weight: 700;">FLUTTER & NATIVE ARCHITECTURE</div>
+                  <div style="font-size: 15px; font-weight: 700; color: #FFF; line-height: 1.1;">60–120 FPS Mobile Engineering</div>
                </div>
-               <div class="col-lg-5 mt-5 mt-lg-0">
-                  <div class="p-4" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; backdrop-filter: blur(10px);">
-                     <div class="d-flex justify-content-between align-items-center mb-3 pb-2" style="border-bottom: 1px solid rgba(255,255,255,0.06);">
-                        <span class="text-white" style="font-size: 13px; font-weight: 700;"><i class="fas fa-mobile-alt me-2 text-white"></i>Mobile App Health</span>
-                        <span class="badge" style="background: rgba(56,189,248,0.15); color: #38BDF8; font-size: 11px;">iOS 18 & Android 15</span>
-                     </div>
-                     <div class="d-flex align-items-center gap-3 p-3 mb-3" style="background: rgba(0,0,0,0.3); border-radius: 12px;">
-                        <i class="fab fa-apple text-white" style="font-size: 28px;"></i>
-                        <div class="flex-grow-1">
-                           <div class="d-flex justify-content-between text-white" style="font-size: 13px; font-weight: 600;">
-                              <span>Apple App Store</span>
-                              <span>Live on iOS</span>
-                           </div>
-                           <div style="font-size: 11px; color: #777777;">Review time: 24h &bull; TestFlight ready</div>
-                        </div>
-                     </div>
-                     <div class="d-flex align-items-center gap-3 p-3 mb-3" style="background: rgba(0,0,0,0.3); border-radius: 12px;">
-                        <i class="fab fa-google-play text-white" style="font-size: 26px;"></i>
-                        <div class="flex-grow-1">
-                           <div class="d-flex justify-content-between text-white" style="font-size: 13px; font-weight: 600;">
-                              <span>Google Play Console</span>
-                              <span>Live on Android</span>
-                           </div>
-                           <div style="font-size: 11px; color: #777777;">AAB Bundle &bull; Target API 35 Verified</div>
-                        </div>
-                     </div>
-                     <div class="p-3" style="background: rgba(255,255,255,0.03); border-radius: 12px; font-size: 12px; color: #CCCCCC;">
-                        <div class="d-flex justify-content-between">
-                           <span>Render Performance</span>
-                           <span class="text-white font-weight-bold">Solid 60 - 120 FPS</span>
-                        </div>
-                     </div>
-                  </div>
+               <div style="width: 1px; height: 26px; background: rgba(255,255,255,0.15); margin: 0 4px;"></div>
+               <div class="d-flex align-items-center gap-2">
+                  <span class="vj-app-radar"></span>
+                  <span style="font-size: 12px; color: #CCC; font-weight: 600;">iOS 18 & Android 15</span>
                </div>
             </div>
          </div>
-      </section>
 
-      <!-- INTERACTIVE APP MOCKUP SHOWCASE -->
-      <section class="py-5" style="background: #0D0E12;">
-         <div class="container py-4">
-            <div class="text-center mb-50" style="margin-bottom: 45px !important;">
-               <span class="text-uppercase" style="font-size: 12px; letter-spacing: 2px; color: #777777; font-weight: 700;">USER EXPERIENCE ENGINEERING</span>
-               <h2 class="text-white mt-1" style="font-size: 38px; font-weight: 800;">Designed for High-Converting Mobile Flows</h2>
-               <p style="color: #888888; max-width: 600px; margin: 0 auto; font-size: 15px;">Fluid animations, zero micro-stutters, and frictionless native interactions that turn casual users into loyal daily active users.</p>
-            </div>
+         <h1 class="oit-title-revel text-white mb-3" style="font-size: 56px; font-weight: 900; line-height: 1.12; letter-spacing: -1.5px; max-width: 950px; margin: 0 auto;">
+            NATIVE & HYBRID FLUTTER <br>
+            <span style="background: linear-gradient(90deg, #FFFFFF 0%, #888888 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">MOBILE APPLICATIONS</span>
+         </h1>
 
-            <!-- SMARTPHONE SHOWCASE ROW -->
-            <div class="row justify-content-center g-4">
-               <!-- Phone 1: Dashboard Flow -->
-               <div class="col-lg-4 col-md-6">
-                  <div class="p-3 mx-auto" style="max-width: 320px; background: #000000; border: 4px solid #2A2E39; border-radius: 40px; box-shadow: 0 25px 60px rgba(0,0,0,0.8);">
-                     <!-- Dynamic Island -->
-                     <div class="mx-auto mb-3" style="width: 90px; height: 20px; background: #111; border-radius: 20px;"></div>
-                     <!-- Screen Content -->
-                     <div class="p-3" style="background: #141720; border-radius: 28px; min-height: 480px;">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                           <div>
-                              <div style="font-size: 11px; color: #888;">Welcome Back</div>
-                              <div class="text-white fw-bold" style="font-size: 16px;">Vijayho Business</div>
-                           </div>
-                           <div style="width: 32px; height: 32px; border-radius: 50%; background: #333; display: flex; align-items: center; justify-content: center;">
-                              <i class="fas fa-bell text-white" style="font-size: 12px;"></i>
-                           </div>
-                        </div>
-                        <!-- Mini Card -->
-                        <div class="p-3 mb-3" style="background: linear-gradient(135deg, #1E2330 0%, #151821 100%); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;">
-                           <div style="font-size: 11px; color: #888;">Total Balance</div>
-                           <div class="text-white fw-bold" style="font-size: 22px;">₹14,82,900</div>
-                           <div class="d-flex justify-content-between mt-2 pt-2" style="border-top: 1px solid rgba(255,255,255,0.06); font-size: 11px; color: #22C55E;">
-                              <span>+18.4% this month</span>
-                              <span>Auto-synced</span>
-                           </div>
-                        </div>
-                        <!-- Quick Actions -->
-                        <div class="row g-2 text-center mb-3">
-                           <div class="col-4">
-                              <div class="p-2" style="background: rgba(255,255,255,0.04); border-radius: 12px;">
-                                 <i class="fas fa-paper-plane text-white mb-1" style="font-size: 14px;"></i>
-                                 <div style="font-size: 10px; color: #CCC;">Transfer</div>
-                              </div>
-                           </div>
-                           <div class="col-4">
-                              <div class="p-2" style="background: rgba(255,255,255,0.04); border-radius: 12px;">
-                                 <i class="fas fa-qrcode text-white mb-1" style="font-size: 14px;"></i>
-                                 <div style="font-size: 10px; color: #CCC;">Scan UPI</div>
-                              </div>
-                           </div>
-                           <div class="col-4">
-                              <div class="p-2" style="background: rgba(255,255,255,0.04); border-radius: 12px;">
-                                 <i class="fas fa-chart-pie text-white mb-1" style="font-size: 14px;"></i>
-                                 <div style="font-size: 10px; color: #CCC;">Analytics</div>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- Recent Transactions -->
-                        <div style="font-size: 12px; color: #888; font-weight: 600; margin-bottom: 8px;">Recent Leads & Orders</div>
-                        <div class="p-2 mb-2 d-flex justify-content-between align-items-center" style="background: rgba(255,255,255,0.03); border-radius: 10px;">
-                           <div>
-                              <div class="text-white" style="font-size: 11px; font-weight: 600;">Textile Order #4892</div>
-                              <div style="font-size: 9px; color: #777;">Surat Wholesale &bull; Completed</div>
-                           </div>
-                           <span class="text-success" style="font-size: 11px; font-weight: 700;">+₹45,000</span>
-                        </div>
-                        <div class="p-2 d-flex justify-content-between align-items-center" style="background: rgba(255,255,255,0.03); border-radius: 10px;">
-                           <div>
-                              <div class="text-white" style="font-size: 11px; font-weight: 600;">Diamond CRM Inquiry</div>
-                              <div style="font-size: 9px; color: #777;">Direct App Lead &bull; Verified</div>
-                           </div>
-                           <span class="text-white" style="font-size: 11px; font-weight: 700;">New Lead</span>
-                        </div>
+         <p class="fade-anim mx-auto" data-delay="0.2" style="max-width: 740px; font-size: 17px; color: #999999; line-height: 1.7; margin-bottom: 45px !important;">
+            We engineer high-retention mobile applications for iOS and Android. Built with Flutter, SwiftUI, and Jetpack Compose featuring offline-first storage and biometric security.
+         </p>
+
+         <!-- 4 Counters -->
+         <div class="row g-3 justify-content-center mx-auto fade-anim" data-delay="0.3" style="max-width: 980px; margin-bottom: 45px !important;">
+            <div class="col-6 col-md-3"><div class="vj-app-card"><div class="text-white" style="font-size: 32px; font-weight: 900; line-height: 1.1;">4.9 &starf;</div><div style="font-size: 11px; color: #888; text-transform: uppercase; margin-top: 8px; font-weight: 600; letter-spacing: 0.5px;">Average Store Rating</div></div></div>
+            <div class="col-6 col-md-3"><div class="vj-app-card"><div class="text-white" style="font-size: 32px; font-weight: 900; line-height: 1.1;">99.98%</div><div style="font-size: 11px; color: #888; text-transform: uppercase; margin-top: 8px; font-weight: 600; letter-spacing: 0.5px;">Crash-Free Sessions</div></div></div>
+            <div class="col-6 col-md-3"><div class="vj-app-card"><div class="text-white" style="font-size: 32px; font-weight: 900; line-height: 1.1;">1M+</div><div style="font-size: 11px; color: #888; text-transform: uppercase; margin-top: 8px; font-weight: 600; letter-spacing: 0.5px; white-space: nowrap;">Total App Installs</div></div></div>
+            <div class="col-6 col-md-3"><div class="vj-app-card"><div class="text-white" style="font-size: 32px; font-weight: 900; line-height: 1.1;">120 FPS</div><div style="font-size: 11px; color: #888; text-transform: uppercase; margin-top: 8px; font-weight: 600; letter-spacing: 0.5px;">Fluid Native Render</div></div></div>
+         </div>
+
+         <div class="d-flex flex-wrap justify-content-center gap-3 fade-anim" data-delay="0.4">
+            <a href="#vjAppSimulator" class="d-inline-flex align-items-center gap-2 px-5 py-3" style="background: #FFFFFF; color: #000; font-weight: 700; border-radius: 30px; text-decoration: none; font-size: 15px; box-shadow: 0 10px 30px rgba(255,255,255,0.25);">
+               <span>App Retention Calculator</span>
+               <i class="fas fa-calculator"></i>
+            </a>
+            <a href="contact-v1-dark.html" class="d-inline-flex align-items-center gap-2 px-4 py-3" style="background: rgba(255,255,255,0.06); color: #FFF; font-weight: 600; border: 1px solid rgba(255,255,255,0.15); border-radius: 30px; text-decoration: none; font-size: 15px;">
+               <span>Schedule App Consultation</span>
+               <i class="fas fa-arrow-right"></i>
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <!-- INTERACTIVE SMARTPHONE SHOWCASE & SCREEN SWITCHER -->
+   <div class="py-5" style="background: #0B0D11; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
+      <div class="container py-4">
+         <div class="text-center mb-4">
+            <span class="text-uppercase" style="font-size: 12px; letter-spacing: 2px; color: #777; font-weight: 700;">USER EXPERIENCE ENGINEERING</span>
+            <h2 class="oit-title-revel text-white mt-1" style="font-size: 40px; font-weight: 800;">High-Retention Mobile Architecture</h2>
+         </div>
+
+         <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+            <button class="vj-app-tab-btn active" onclick="switchAppTab('b2b')"><i class="fas fa-chart-pie me-1"></i> B2B Portal App</button>
+            <button class="vj-app-tab-btn" onclick="switchAppTab('d2c')"><i class="fas fa-shopping-bag me-1"></i> D2C E-Commerce App</button>
+         </div>
+
+         <div class="mx-auto" style="max-width: 800px;">
+            <!-- B2B App Screen -->
+            <div id="vjAppB2b" class="p-3 mx-auto" style="max-width: 320px; background: #000; border: 4px solid #2A2E39; border-radius: 40px; box-shadow: 0 25px 60px rgba(0,0,0,0.8);">
+               <div class="mx-auto mb-3" style="width: 90px; height: 20px; background: #111; border-radius: 20px;"></div>
+               <div class="p-3" style="background: #141720; border-radius: 28px; min-height: 480px;">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                     <div><div style="font-size: 11px; color: #888;">Welcome Back</div><div class="text-white fw-bold" style="font-size: 16px;">Vijayho Business Hub</div></div>
+                     <div style="width: 32px; height: 32px; border-radius: 50%; background: #333; display: flex; align-items: center; justify-content: center;"><i class="fas fa-bell text-white" style="font-size: 12px;"></i></div>
+                  </div>
+                  <div class="p-3 mb-3" style="background: linear-gradient(135deg, #1E2330 0%, #151821 100%); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;">
+                     <div style="font-size: 11px; color: #888;">Surat B2B Orders</div>
+                     <div class="text-white fw-bold" style="font-size: 22px;">₹14,82,900</div>
+                     <div class="d-flex justify-content-between mt-2 pt-2" style="border-top: 1px solid rgba(255,255,255,0.06); font-size: 11px; color: #22C55E;">
+                        <span>+18.4% this month</span><span>Tally Synced</span>
                      </div>
                   </div>
-                  <div class="text-center mt-3 text-white fw-bold" style="font-size: 15px;">B2B Enterprise Portal App</div>
-               </div>
-
-               <!-- Phone 2: E-Commerce Storefront App -->
-               <div class="col-lg-4 col-md-6">
-                  <div class="p-3 mx-auto" style="max-width: 320px; background: #000000; border: 4px solid #2A2E39; border-radius: 40px; box-shadow: 0 25px 60px rgba(0,0,0,0.8);">
-                     <div class="mx-auto mb-3" style="width: 90px; height: 20px; background: #111; border-radius: 20px;"></div>
-                     <div class="p-3" style="background: #141720; border-radius: 28px; min-height: 480px;">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                           <span class="badge" style="background: rgba(255,255,255,0.1); color: #FFF;">Flash Sale 50%</span>
-                           <i class="fas fa-heart text-danger"></i>
-                        </div>
-                        <div class="p-4 text-center mb-3" style="background: rgba(255,255,255,0.03); border-radius: 16px;">
-                           <i class="fas fa-box-open text-white mb-2" style="font-size: 48px; opacity: 0.9;"></i>
-                           <div class="text-white fw-bold" style="font-size: 15px;">Premium Apparel Bundle</div>
-                           <div style="color: #888; font-size: 11px;">Instant Surat Warehouse Dispatch</div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                           <div>
-                              <div style="font-size: 11px; color: #888;">Unit Price</div>
-                              <div class="text-white fw-bold" style="font-size: 20px;">₹2,499</div>
-                           </div>
-                           <div class="d-flex align-items-center gap-2">
-                              <span class="px-2 py-1" style="background: rgba(255,255,255,0.08); border-radius: 6px; color: #FFF; font-size: 11px;">S</span>
-                              <span class="px-2 py-1" style="background: #FFF; border-radius: 6px; color: #000; font-size: 11px; font-weight: 700;">M</span>
-                              <span class="px-2 py-1" style="background: rgba(255,255,255,0.08); border-radius: 6px; color: #FFF; font-size: 11px;">L</span>
-                           </div>
-                        </div>
-                        <button class="btn w-100 py-2 mb-2 text-dark fw-bold" style="background: #FFFFFF; border-radius: 12px; font-size: 13px;">
-                           <i class="fas fa-bolt me-1"></i> Instant 1-Click Buy
-                        </button>
-                        <div class="text-center" style="font-size: 10px; color: #777;">
-                           <i class="fas fa-shield-alt me-1 text-success"></i> Razorpay & UPI 2.0 Protected
-                        </div>
-                     </div>
+                  <div class="row g-2 text-center mb-3">
+                     <div class="col-4"><div class="p-2" style="background: rgba(255,255,255,0.04); border-radius: 12px;"><i class="fas fa-boxes text-white mb-1"></i><div style="font-size: 10px; color: #CCC;">Stock</div></div></div>
+                     <div class="col-4"><div class="p-2" style="background: rgba(255,255,255,0.04); border-radius: 12px;"><i class="fas fa-qrcode text-white mb-1"></i><div style="font-size: 10px; color: #CCC;">Scan</div></div></div>
+                     <div class="col-4"><div class="p-2" style="background: rgba(255,255,255,0.04); border-radius: 12px;"><i class="fas fa-file-invoice text-white mb-1"></i><div style="font-size: 10px; color: #CCC;">Invoices</div></div></div>
                   </div>
-                  <div class="text-center mt-3 text-white fw-bold" style="font-size: 15px;">Direct-to-Consumer (D2C) App</div>
+                  <div class="p-2 mb-2 d-flex justify-content-between" style="background: rgba(255,255,255,0.03); border-radius: 10px;">
+                     <div><div class="text-white" style="font-size: 11px; font-weight: 600;">Textile Order #4892</div><div style="font-size: 9px; color: #777;">Wholesale &bull; Dispatched</div></div>
+                     <span class="text-success font-weight-bold" style="font-size: 11px;">+₹45,000</span>
+                  </div>
+               </div>
+            </div>
+
+            <!-- D2C App Screen (Hidden by default) -->
+            <div id="vjAppD2c" class="p-3 mx-auto" style="display: none; max-width: 320px; background: #000; border: 4px solid #2A2E39; border-radius: 40px; box-shadow: 0 25px 60px rgba(0,0,0,0.8);">
+               <div class="mx-auto mb-3" style="width: 90px; height: 20px; background: #111; border-radius: 20px;"></div>
+               <div class="p-3" style="background: #141720; border-radius: 28px; min-height: 480px;">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                     <span class="badge" style="background: rgba(255,255,255,0.1); color: #FFF;">Flash Deal 50%</span>
+                     <i class="fas fa-heart text-danger"></i>
+                  </div>
+                  <div class="p-4 text-center mb-3" style="background: rgba(255,255,255,0.03); border-radius: 16px;">
+                     <i class="fas fa-box-open text-white mb-2" style="font-size: 48px;"></i>
+                     <div class="text-white fw-bold" style="font-size: 15px;">Apparel Bundle</div>
+                     <div class="text-success fw-bold mt-1" style="font-size: 18px;">₹2,499</div>
+                  </div>
+                  <button class="btn w-100 py-2 text-dark fw-bold" style="background: #FFF; border-radius: 12px; font-size: 13px;"><i class="fas fa-bolt me-1"></i> Instant 1-Click Buy</button>
+                  <div class="text-center mt-2" style="font-size: 10px; color: #777;"><i class="fas fa-shield-alt text-success me-1"></i> Razorpay & UPI 2.0 Protected</div>
                </div>
             </div>
          </div>
-      </section>
+      </div>
+   </div>
 
-      <!-- 4 APP PILLARS -->
-      <section class="py-5" style="background: #0A0C0F;">
-         <div class="container py-4">
-            <div class="text-center mb-50" style="margin-bottom: 45px !important;">
-               <span class="text-uppercase" style="font-size: 12px; letter-spacing: 2px; color: #777777; font-weight: 700;">MOBILE EXCELLENCE</span>
-               <h2 class="text-white mt-1" style="font-size: 36px; font-weight: 800;">4 Pillars of Vijayho App Engineering</h2>
+   <!-- APP SIMULATOR -->
+   <div id="vjAppSimulator" class="py-5" style="background: radial-gradient(circle at 50% 50%, #161A24 0%, #0D0E12 100%);">
+      <div class="container py-4">
+         <div class="text-center mb-5">
+            <span class="text-uppercase" style="font-size: 12px; letter-spacing: 2px; color: #777; font-weight: 700;">USER RETENTION CALCULATOR</span>
+            <h2 class="oit-title-revel text-white mt-1" style="font-size: 40px; font-weight: 800;">Mobile App Retention & Value Simulator</h2>
+         </div>
+
+         <div class="p-4 p-lg-5 mx-auto" style="max-width: 980px; background: #11141B; border: 1px solid rgba(255,255,255,0.1); border-radius: 24px;">
+            <div class="mb-5">
+               <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span style="font-size: 13px; color: #888; text-transform: uppercase; font-weight: 600;">Active Mobile Users:</span>
+                  <div class="text-white fw-bold" style="font-size: 32px; font-family: monospace;"><span id="vjAppUsersDisplay">10,000</span> Users</div>
+               </div>
+               <input type="range" class="vj-slider" id="vjAppSlider" min="2000" max="100000" step="2000" value="10000" oninput="calculateAppSimulator(this.value)">
+               <div class="d-flex justify-content-between mt-2" style="font-size: 12px; color: #666;">
+                  <span>2,000 users</span>
+                  <span>50,000 users</span>
+                  <span>1,00,000 users</span>
+               </div>
             </div>
-            <div class="row g-4">
-               <div class="col-lg-3 col-md-6">
-                  <div class="p-4 h-100" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 18px;">
-                     <i class="fab fa-flutter text-white mb-3" style="font-size: 32px;"></i>
-                     <h4 class="text-white mb-2" style="font-size: 18px; font-weight: 700;">Flutter & React Native</h4>
-                     <p style="color: #888888; font-size: 14px; line-height: 1.6;">One performant codebase compiled to native ARM binaries for iOS and Android. Cuts development time by 40% with zero quality loss.</p>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6">
-                  <div class="p-4 h-100" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 18px;">
-                     <i class="fab fa-swift text-white mb-3" style="font-size: 32px;"></i>
-                     <h4 class="text-white mb-2" style="font-size: 18px; font-weight: 700;">Swift & Kotlin Native</h4>
-                     <p style="color: #888888; font-size: 14px; line-height: 1.6;">For demanding applications requiring deep hardware access, Bluetooth BLE peripherals, background geofencing, or Metal GPU shaders.</p>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6">
-                  <div class="p-4 h-100" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 18px;">
-                     <i class="fas fa-database text-white mb-3" style="font-size: 32px;"></i>
-                     <h4 class="text-white mb-2" style="font-size: 18px; font-weight: 700;">Offline-First Sync</h4>
-                     <p style="color: #888888; font-size: 14px; line-height: 1.6;">Built with SQLite and water-tight conflict resolution. Your sales agents and warehouse staff can work with zero internet connectivity.</p>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-6">
-                  <div class="p-4 h-100" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 18px;">
-                     <i class="fas fa-bell text-white mb-3" style="font-size: 32px;"></i>
-                     <h4 class="text-white mb-2" style="font-size: 18px; font-weight: 700;">Smart Push & Retention</h4>
-                     <p style="color: #888888; font-size: 14px; line-height: 1.6;">Automated behavioral push notifications via Firebase FCM and OneSignal that recover abandoned checkouts and boost repeat retention.</p>
-                  </div>
-               </div>
+
+            <div class="row g-3 mb-4">
+               <div class="col-md-4"><div class="p-3 text-center" style="background: rgba(255,255,255,0.03); border-radius: 14px;"><div style="font-size: 11px; color: #888;">Push Notification Reach</div><div id="vjAppPush" class="text-white fw-bold mt-1" style="font-size: 22px;">4,200 Opens</div><div style="font-size: 10px; color: #22C55E;">42% Open Rate (vs 2% email)</div></div></div>
+               <div class="col-md-4"><div class="p-3 text-center" style="background: rgba(255,255,255,0.03); border-radius: 14px;"><div style="font-size: 11px; color: #888;">Repeat Order Lift</div><div class="text-white fw-bold mt-1" style="font-size: 22px;">+65% Retention</div><div style="font-size: 10px; color: #38BDF8;">Direct home-screen access</div></div></div>
+               <div class="col-md-4"><div class="p-3 text-center" style="background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.3); border-radius: 14px;"><div style="font-size: 11px; color: #38BDF8; font-weight: 700;">Projected In-App Sales</div><div id="vjAppRev" class="text-white fw-bold mt-1" style="font-size: 22px;">₹18,40,000 / mo</div><div style="font-size: 10px; color: #38BDF8; font-weight: 700;">Zero Third-Party Commissions</div></div></div>
+            </div>
+
+            <div class="p-3 text-center d-flex flex-wrap justify-content-between align-items-center" style="background: rgba(255,255,255,0.02); border-radius: 14px;">
+               <div class="text-start"><div class="text-white fw-bold" style="font-size: 14px;">Ready to deploy your brand on the App Store & Play Store?</div><div style="font-size: 12px; color: #888;">100% intellectual property ownership guaranteed.</div></div>
+               <a href="contact-v1-dark.html" class="btn text-dark fw-bold px-4 py-2 mt-2 mt-md-0" style="background: #FFF; border-radius: 20px; font-size: 13px;">Get Mobile App Estimate &rarr;</a>
             </div>
          </div>
-      </section>
+      </div>
+   </div>
 
-      <!-- COMPARISON -->
-      <section class="py-5" style="background: #0D0E12;">
-         <div class="container py-4">
-            <div class="text-center mb-50" style="margin-bottom: 45px !important;">
-               <span class="text-uppercase" style="font-size: 12px; letter-spacing: 2px; color: #777777; font-weight: 700;">TECHNICAL COMPARISON</span>
-               <h2 class="text-white mt-1" style="font-size: 36px; font-weight: 800;">Web Wrapper vs. Vijayho Mobile Engineering</h2>
+   <!-- FAQ -->
+   <div class="py-5" style="background: #0D0E12;">
+      <div class="container py-4">
+         <div class="text-center mb-5">
+            <span class="text-uppercase" style="font-size: 12px; letter-spacing: 2px; color: #777; font-weight: 700;">FREQUENTLY ASKED QUESTIONS</span>
+            <h2 class="oit-title-revel text-white mt-1" style="font-size: 36px; font-weight: 800;">Mobile App Insights</h2>
+         </div>
+         <div class="mx-auto" style="max-width: 850px;">
+            <div class="p-4 mb-3" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; cursor: pointer;" onclick="toggleAppFaq(this)">
+               <div class="d-flex justify-content-between align-items-center"><h4 class="text-white mb-0" style="font-size: 17px; font-weight: 600;">Do you publish the app under our own company developer account?</h4><i class="fas fa-chevron-down text-white" style="transition: transform 0.3s ease;"></i></div>
+               <div class="app-faq-body mt-3 pt-3" style="border-top: 1px solid rgba(255,255,255,0.06); color: #999; font-size: 14px; line-height: 1.6; display: none;">Yes. You maintain 100% ownership. We assist you in enrolling in the Apple Developer Program and Google Play Console and handle all binary submissions.</div>
             </div>
-            <div class="table-responsive mx-auto" style="max-width: 900px;">
-               <table class="table text-white mb-0" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;">
-                  <thead>
-                     <tr style="background: rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.1);">
-                        <th class="py-4 px-4 text-uppercase" style="font-size: 14px; color: #888;">Metric</th>
-                        <th class="py-4 px-4 text-uppercase" style="font-size: 14px; color: #888;">Cheap WebView Wrapper</th>
-                        <th class="py-4 px-4 text-uppercase text-white" style="font-size: 14px; background: rgba(255,255,255,0.08); font-weight: 700;">Vijayho Native Architecture</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                        <td class="py-3 px-4 fw-bold">Frame Rate & Lag</td>
-                        <td class="py-3 px-4" style="color: #888;">20-30 FPS, noticeable stutter</td>
-                        <td class="py-3 px-4 text-white" style="background: rgba(255,255,255,0.04); font-weight: 600;"><i class="fas fa-check text-white me-2"></i>Fluid 60 - 120 FPS Native</td>
-                     </tr>
-                     <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                        <td class="py-3 px-4 fw-bold">App Store Approval</td>
-                        <td class="py-3 px-4" style="color: #888;">Frequently rejected by Apple (Guideline 4.2)</td>
-                        <td class="py-3 px-4 text-white" style="background: rgba(255,255,255,0.04); font-weight: 600;"><i class="fas fa-check text-white me-2"></i>100% First-Time Approval Guarantee</td>
-                     </tr>
-                     <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                        <td class="py-3 px-4 fw-bold">Offline Capabilities</td>
-                        <td class="py-3 px-4" style="color: #888;">Fails with "No Internet" screen</td>
-                        <td class="py-3 px-4 text-white" style="background: rgba(255,255,255,0.04); font-weight: 600;"><i class="fas fa-check text-white me-2"></i>Full Offline Storage with SQLite Sync</td>
-                     </tr>
-                  </tbody>
-               </table>
+            <div class="p-4 mb-3" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; cursor: pointer;" onclick="toggleAppFaq(this)">
+               <div class="d-flex justify-content-between align-items-center"><h4 class="text-white mb-0" style="font-size: 17px; font-weight: 600;">How do you prevent crashes during flash sales?</h4><i class="fas fa-chevron-down text-white" style="transition: transform 0.3s ease;"></i></div>
+               <div class="app-faq-body mt-3 pt-3" style="border-top: 1px solid rgba(255,255,255,0.06); color: #999; font-size: 14px; line-height: 1.6; display: none;">We implement Firebase Crashlytics, automated unit testing, Sentry telemetry, and serverless auto-scaling backends maintaining 99.98% crash-free sessions.</div>
             </div>
          </div>
-      </section>
+      </div>
+   </div>
 
-      <!-- FAQ ACCORDION -->
-      <section class="py-5" style="background: #0A0C0F;">
-         <div class="container py-4">
-            <div class="text-center mb-50" style="margin-bottom: 45px !important;">
-               <span class="text-uppercase" style="font-size: 12px; letter-spacing: 2px; color: #777777; font-weight: 700;">FREQUENTLY ASKED QUESTIONS</span>
-               <h2 class="text-white mt-1" style="font-size: 36px; font-weight: 800;">Mobile App Insights</h2>
-            </div>
-            <div class="mx-auto" style="max-width: 850px;">
-               <div class="faq-item p-4 mb-3" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; cursor: pointer;" onclick="this.classList.toggle('active');">
-                  <div class="d-flex justify-content-between align-items-center">
-                     <h4 class="text-white mb-0" style="font-size: 17px; font-weight: 600;">Do you publish the app under our own company Apple & Google accounts?</h4>
-                     <i class="fas fa-chevron-down text-white" style="font-size: 14px; transition: transform 0.3s ease;"></i>
-                  </div>
-                  <div class="faq-answer mt-3 pt-3" style="border-top: 1px solid rgba(255,255,255,0.06); color: #999999; font-size: 14px; line-height: 1.6; display: none;">
-                     Yes. You retain 100% intellectual property and ownership. We assist you in setting up your Apple Developer Program ($99/yr) and Google Play Console ($25 one-time) accounts and handle the end-to-end signing, certificates, and compliance.
-                  </div>
-               </div>
-               <div class="faq-item p-4 mb-3" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; cursor: pointer;" onclick="this.classList.toggle('active');">
-                  <div class="d-flex justify-content-between align-items-center">
-                     <h4 class="text-white mb-0" style="font-size: 17px; font-weight: 600;">How do you ensure our mobile app doesn't crash during flash sales or heavy traffic?</h4>
-                     <i class="fas fa-chevron-down text-white" style="font-size: 14px; transition: transform 0.3s ease;"></i>
-                  </div>
-                  <div class="faq-answer mt-3 pt-3" style="border-top: 1px solid rgba(255,255,255,0.06); color: #999999; font-size: 14px; line-height: 1.6; display: none;">
-                     We implement Firebase Crashlytics, automated unit testing, Sentry telemetry, and serverless auto-scaling backends. Our state machines and memory pools prevent memory leaks, maintaining a 99.98% crash-free session rate even at massive concurrency.
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      
+   
       <!-- SUB-SERVICE QUICK NAVIGATION -->
-      <section class="py-5" style="background: #0A0C0F; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
+      <div class="py-5" style="background: #0A0C0F; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06);">
          <div class="container">
             <div class="text-center mb-4">
                <span class="text-uppercase" style="font-size: 11px; letter-spacing: 2px; color: #888888; font-weight: 700;">EXPLORE TECH SERVICES</span>
@@ -524,31 +416,30 @@
                </a>
             </div>
          </div>
-      </section>
-      
+      </div>
+   
       <!-- HIGH CONVERSION CTA BANNER -->
-      <section class="py-5" style="background: radial-gradient(circle at center, #1A1F26 0%, #0D0E12 100%); border-top: 1px solid rgba(255,255,255,0.08);">
+      <div class="py-5" style="background: radial-gradient(circle at center, #1A1F26 0%, #0D0E12 100%);">
          <div class="container py-4">
             <div class="p-5 text-center position-relative overflow-hidden" style="background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%); border: 1px solid rgba(255,255,255,0.12); border-radius: 28px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
-               <div style="position: absolute; top: -50%; left: 50%; transform: translateX(-50%); width: 600px; height: 300px; background: radial-gradient(ellipse, rgba(255,255,255,0.08) 0%, transparent 70%); filter: blur(50px); pointer-events: none;"></div>
                <span class="d-inline-block px-3 py-1 mb-3 text-uppercase" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; font-size: 11px; letter-spacing: 2px; color: #CCCCCC;">SURAT'S PREMIER TECH POWERHOUSE</span>
-               <h2 class="text-white mb-3" style="font-size: 40px; font-weight: 800; letter-spacing: -0.5px;">Ready to Transform Your <span style="background: linear-gradient(90deg, #FFFFFF, #999999); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Mobile Application</span>?</h2>
+               <h2 class="text-white mb-3" style="font-size: 42px; font-weight: 800; letter-spacing: -0.5px;">Ready to Transform Your <span style="background: linear-gradient(90deg, #FFFFFF, #999999); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Mobile Applications</span>?</h2>
                <p class="mx-auto mb-4" style="max-width: 650px; color: #AAAAAA; font-size: 16px; line-height: 1.6;">Partner with Vijayho to build scalable, conversion-obsessed systems that eliminate inefficiencies and accelerate your top-line revenue.</p>
                <div class="d-flex flex-wrap justify-content-center gap-3">
-                  <a href="contact-v1-dark.html" class="d-inline-flex align-items-center gap-2 px-5 py-3" style="background: #FFFFFF; color: #000000; font-weight: 700; border-radius: 30px; text-decoration: none; font-size: 15px; box-shadow: 0 8px 30px rgba(255,255,255,0.25); transition: transform 0.2s ease;">
+                  <a href="contact-v1-dark.html" class="d-inline-flex align-items-center gap-2 px-5 py-3" style="background: #FFFFFF; color: #000000; font-weight: 700; border-radius: 30px; text-decoration: none; font-size: 15px; box-shadow: 0 8px 30px rgba(255,255,255,0.25);">
                      <span>Schedule Mobile App Strategy Session</span>
                      <i class="fas fa-arrow-right"></i>
                   </a>
                   <a href="https://wa.me/919999999999" target="_blank" class="d-inline-flex align-items-center gap-2 px-4 py-3" style="background: rgba(255,255,255,0.05); color: #FFFFFF; font-weight: 600; border: 1px solid rgba(255,255,255,0.15); border-radius: 30px; text-decoration: none; font-size: 15px;">
                      <i class="fab fa-whatsapp" style="color: #25D366;"></i>
-                     <span>Instant WhatsApp Discovery</span>
+                     <span>WhatsApp Strategy Chat</span>
                   </a>
                </div>
             </div>
          </div>
-      </section>
-  
-         </main>
+      </div>
+</main>
+
 
                   <!-- footer area start -->
          <footer data-bg-color="#101216" style="border-top: 1px solid rgba(255, 255, 255, 0.1);">
@@ -684,6 +575,31 @@
          transform: rotate(180deg);
       }
    </style>
+
+<script>
+   function switchAppTab(tab) {
+      document.querySelectorAll('.vj-app-tab-btn').forEach(b => b.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+      document.getElementById('vjAppB2b').style.display = tab === 'b2b' ? 'block' : 'none';
+      document.getElementById('vjAppD2c').style.display = tab === 'd2c' ? 'block' : 'none';
+   }
+   function calculateAppSimulator(val) {
+      const u = parseInt(val, 10);
+      document.getElementById('vjAppUsersDisplay').innerText = u.toLocaleString('en-IN');
+      const pushOpens = Math.round(u * 0.42);
+      document.getElementById('vjAppPush').innerText = pushOpens.toLocaleString('en-IN') + ' Opens';
+      const rev = Math.round(u * 184);
+      document.getElementById('vjAppRev').innerText = '₹' + rev.toLocaleString('en-IN') + ' / mo';
+   }
+   function toggleAppFaq(el) {
+      const body = el.querySelector('.app-faq-body');
+      const icon = el.querySelector('i.fa-chevron-down');
+      const isOpen = body.style.display === 'block';
+      document.querySelectorAll('.app-faq-body').forEach(b => b.style.display = 'none');
+      document.querySelectorAll('.fa-chevron-down').forEach(i => i.style.transform = 'rotate(0deg)');
+      if (!isOpen) { body.style.display = 'block'; icon.style.transform = 'rotate(180deg)'; }
+   }
+</script>
 </body>
 
 </html>
